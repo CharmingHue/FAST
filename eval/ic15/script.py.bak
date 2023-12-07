@@ -250,8 +250,8 @@ def evaluate_method(gtFilePath, submFilePath, evaluationParams):
                 #Calculate IoU and precision matrixs
                 outputShape=[len(gtPols),len(detPols)]
                 iouMat = np.empty(outputShape)
-                gtRectMat = np.zeros(len(gtPols),np.int8)
-                detRectMat = np.zeros(len(detPols),np.int8)
+                gtRectMat = np.zeros(len(gtPols),np.int_8)
+                detRectMat = np.zeros(len(detPols),np.int_8)
                 for gtNum in range(len(gtPols)):
                     for detNum in range(len(detPols)):
                         pG = gtPols[gtNum]

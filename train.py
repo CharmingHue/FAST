@@ -7,7 +7,8 @@ import os.path as osp
 import sys
 import time
 import json
-from mmcv import Config
+# from mmcv import Config
+from mmengine.config import Config
 import logging
 
 from dataset import build_data_loader

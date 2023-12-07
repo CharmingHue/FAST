@@ -41,10 +41,10 @@ def get_ann(img, gt_path):
         line = line.replace('\xef\xbb\xbf', '')
         gt = line.split(',')
 
-        x1 = np.int(gt[0])
-        y1 = np.int(gt[1])
+        x1 = np.int_(gt[0])
+        y1 = np.int_(gt[1])
 
-        bbox = [np.int(gt[i]) for i in range(4, 32)]
+        bbox = [np.int_(gt[i]) for i in range(4, 32)]
         bbox = np.asarray(bbox) + ([x1 * 1.0, y1 * 1.0] * 14)
         bbox = np.asarray(bbox) / ([w * 1.0, h * 1.0] * 14)
 

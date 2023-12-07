@@ -87,13 +87,13 @@ class FAST_Synth(data.Dataset):
             bboxes = bboxes[:self.max_word_num]
             words = words[:self.max_word_num]
 
-        gt_words = np.full((self.max_word_num, self.max_word_len), self.char2id['PAD'], dtype=np.int32)
-        word_mask = np.zeros((self.max_word_num,), dtype=np.int32)
+        gt_words = np.full((self.max_word_num, self.max_word_len), self.char2id['PAD'], dtype=np.int_32)
+        word_mask = np.zeros((self.max_word_num,), dtype=np.int_32)
         for i, word in enumerate(words):
             if word == '###':
                 continue
             word = word.lower()
-            gt_word = np.full((self.max_word_len,), self.char2id['PAD'], dtype=np.int)
+            gt_word = np.full((self.max_word_len,), self.char2id['PAD'], dtype=np.int_)
             for j, char in enumerate(word):
                 if j > self.max_word_len - 1:
                     break

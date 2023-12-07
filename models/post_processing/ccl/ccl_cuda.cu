@@ -7,22 +7,38 @@
 #define BLOCK_ROWS 16
 #define BLOCK_COLS 16
 
-
+/*
+使用 template 关键字定义了一个函数，表示该函数可以适用于任意类型 T。
+__device__ 是 CUDA 中的一个修饰符，表示该函数在 CUDA 设备上执行。
+__forceinline__ 是一个指令，建议编译器将函数进行内联展开，从而消除函数调用开销，提高性能。
+该函数接受两个参数：
+bitmap：类型为 T 的值，表示要检查的位图或位集。
+pos：表示要检查的位的位置的 unsigned char 类型。
+函数返回一个 unsigned char 值，如果指定位置的位已设置（为 1），则返回 1，否则返回 0。
+函数的实现使用位运算符进行位检查：
+(bitmap >> pos) 将 bitmap 的位向右移动 pos 个位置，将所关注的位移动到最低有效位。
+& 1 执行与 1 的按位与操作，屏蔽除了最低有效位之外的所有位。
+最终结果作为 unsigned char 返回，表示为 1 或 0。
+该函数在需要检查位图或位集中特定位的状态的情况下非常有用，尤其在 CUDA 设备代码中使用。通过使用模板特化，可以将该函数用于不同大小的位图，如 unsigned int、unsigned long long 等各种类型。
+*/
 template <typename T>
-__device__ __forceinline__ unsigned char hasBit(T bitmap, unsigned char pos) {
+__device__ __forceinline__ unsigned char hasBit(T bitmap, unsigned char pos)
+{
     return (bitmap >> pos) & 1;
 }
 
-
-__device__ int32_t find(const int32_t *s_buf, int32_t n) {
+__device__ int32_t find(const int32_t *s_buf, int32_t n)
+{
     while (s_buf[n] != n)
         n = s_buf[n];
     return n;
 }
 
-__device__ int32_t find_n_compress(int32_t *s_buf, int32_t n) {
+__device__ int32_t find_n_compress(int32_t *s_buf, int32_t n)
+{
     const int32_t id = n;
-    while (s_buf[n] != n) {
+    while (s_buf[n] != n)
+    {
         n = s_buf[n];
         s_buf[id] = n;
     }
@@ -37,12 +53,14 @@ __device__ void union_(int32_t *s_buf, int32_t a, int32_t b)
         a = find(s_buf, a);
         b = find(s_buf, b);
 
-        if (a < b) {
+        if (a < b)
+        {
             int32_t old = atomicMin(s_buf + b, a);
             done = (old == b);
             b = old;
         }
-        else if (b < a){
+        else if (b < a)
+        {
             int32_t old = atomicMin(s_buf + a, b);
             done = (old == a);
             a = old;
@@ -56,6 +74,9 @@ __device__ void union_(int32_t *s_buf, int32_t a, int32_t b)
 namespace cc2d
 {
     __global__ void init_labeling(int32_t *label, const uint32_t W, const uint32_t H)
+    /*
+
+    */
     {
         const uint32_t row = (blockIdx.y * blockDim.y + threadIdx.y) * 2;
         const uint32_t col = (blockIdx.x * blockDim.x + threadIdx.x) * 2;
@@ -64,7 +85,6 @@ namespace cc2d
         if (row < H && col < W)
             label[idx] = idx;
     }
-
 
     __global__ void merge(uint8_t *img, int32_t *label, const uint32_t W, const uint32_t H)
     {
@@ -95,21 +115,30 @@ namespace cc2d
         // if (buffer[1])              P |= (0x777 << 1);
         // if (buffer[2])              P |= (0x777 << 4);
 
-        if (img[idx])                      P |= 0x777;
-        if (row + 1 < H && img[idx + W])   P |= 0x777 << 4;
-        if (col + 1 < W && img[idx + 1])   P |= 0x777 << 1;
+        if (img[idx])
+            P |= 0x777;
+        if (row + 1 < H && img[idx + W])
+            P |= 0x777 << 4;
+        if (col + 1 < W && img[idx + 1])
+            P |= 0x777 << 1;
 
-        if (col == 0)               P &= 0xEEEE;
-        if (col + 1 >= W)           P &= 0x3333;
-        else if (col + 2 >= W)      P &= 0x7777;
+        if (col == 0)
+            P &= 0xEEEE;
+        if (col + 1 >= W)
+            P &= 0x3333;
+        else if (col + 2 >= W)
+            P &= 0x7777;
 
-        if (row == 0)               P &= 0xFFF0;
-        if (row + 1 >= H)           P &= 0xFF;
+        if (row == 0)
+            P &= 0xFFF0;
+        if (row + 1 >= H)
+            P &= 0xFF;
 
         if (P > 0)
         {
             // If need check about top-left pixel(if flag the first bit) and hit the top-left pixel
-            if (hasBit(P, 0) && img[idx - W - 1]){
+            if (hasBit(P, 0) && img[idx - W - 1])
+            {
                 union_(label, idx, idx - 2 * W - 2); // top left block
             }
 
@@ -135,7 +164,7 @@ namespace cc2d
     }
 
     __global__ void final_labeling(const uint8_t *img, int32_t *label,
-//                                   thrust::device_vector<int32_t> *pVec,
+                                   //                                   thrust::device_vector<int32_t> *pVec,
                                    const int32_t W, const int32_t H)
     {
         const uint32_t row = (blockIdx.y * blockDim.y + threadIdx.y) * 2;
@@ -179,7 +208,8 @@ namespace cc2d
 
 } // namespace cc2d
 
-torch::Tensor connected_componnets_labeling_2d(const torch::Tensor &input) {
+torch::Tensor connected_componnets_labeling_2d(const torch::Tensor &input)
+{
     AT_ASSERTM(input.is_cuda(), "input must be a CUDA tensor");
     AT_ASSERTM(input.ndimension() == 2, "input must be a  [H, W] shape");
     AT_ASSERTM(input.scalar_type() == torch::kUInt8, "input must be a uint8 type");
@@ -199,26 +229,23 @@ torch::Tensor connected_componnets_labeling_2d(const torch::Tensor &input) {
     cudaStream_t stream = at::cuda::getCurrentCUDAStream();
 
     cc2d::init_labeling<<<grid, block, 0, stream>>>(
-        label.data_ptr<int32_t>(), W, H
-    );
+        label.data_ptr<int32_t>(), W, H);
     cc2d::merge<<<grid, block, 0, stream>>>(
         input.data_ptr<uint8_t>(),
         label.data_ptr<int32_t>(),
-        W, H
-    );
+        W, H);
     cc2d::compression<<<grid, block, 0, stream>>>(
-        label.data_ptr<int32_t>(), W, H
-    );
+        label.data_ptr<int32_t>(), W, H);
     cc2d::final_labeling<<<grid, block, 0, stream>>>(
         input.data_ptr<uint8_t>(),
         label.data_ptr<int32_t>(),
-        W, H
-    );
+        W, H);
 
     return label;
 }
 
-torch::Tensor connected_componnets_labeling_2d_batch(const torch::Tensor &input) {
+torch::Tensor connected_componnets_labeling_2d_batch(const torch::Tensor &input)
+{
     AT_ASSERTM(input.is_cuda(), "input must be a CUDA tensor");
     AT_ASSERTM(input.ndimension() == 3, "input must be a [C, H, W] shape");
     AT_ASSERTM(input.scalar_type() == torch::kUInt8, "input must be a uint8 type");
@@ -238,24 +265,20 @@ torch::Tensor connected_componnets_labeling_2d_batch(const torch::Tensor &input)
     dim3 block = dim3(BLOCK_COLS, BLOCK_ROWS);
     cudaStream_t stream = at::cuda::getCurrentCUDAStream();
 
-    for (int i = 0; i < B; ++i) {
+    for (int i = 0; i < B; ++i)
+    {
         cc2d::init_labeling<<<grid, block, 0, stream>>>(
-            label[i].data_ptr<int32_t>(), W, H
-        );
+            label[i].data_ptr<int32_t>(), W, H);
         cc2d::merge<<<grid, block, 0, stream>>>(
             input[i].data_ptr<uint8_t>(),
             label[i].data_ptr<int32_t>(),
-            W, H
-        );
+            W, H);
         cc2d::compression<<<grid, block, 0, stream>>>(
-            label[i].data_ptr<int32_t>(), W, H
-        );
+            label[i].data_ptr<int32_t>(), W, H);
         cc2d::final_labeling<<<grid, block, 0, stream>>>(
             input[i].data_ptr<uint8_t>(),
             label[i].data_ptr<int32_t>(),
-            W, H
-        );
+            W, H);
     }
     return label;
 }
-

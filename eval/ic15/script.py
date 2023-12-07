@@ -3,7 +3,7 @@
 from collections import namedtuple
 import rrc_evaluation_funcs
 import importlib
-
+import numpy as np
 def evaluation_imports():
     """
     evaluation_imports: Dictionary ( key = module name , value = alias  )  with python modules used in the evaluation. 
@@ -58,7 +58,7 @@ def evaluate_method(gtFilePath, submFilePath, evaluationParams):
         - samples (optional) Per sample metrics. Ex: {'sample1' : { 'Precision':0.8,'Recall':0.9 } , 'sample2' : { 'Precision':0.8,'Recall':0.9 }
     """
 
-    for module,alias in evaluation_imports().iteritems():
+    for module,alias in evaluation_imports().items():
         globals()[alias] = importlib.import_module(module)
 
     def polygon_from_points(points):

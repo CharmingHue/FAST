@@ -83,13 +83,13 @@ class PAN_TT(data.Dataset):
             bboxes = bboxes[:self.max_word_num]
             words = words[:self.max_word_num]
 
-        gt_words = np.full((self.max_word_num + 1, self.max_word_len), self.char2id['PAD'], dtype=np.int32)
-        word_mask = np.zeros((self.max_word_num + 1,), dtype=np.int32)
+        gt_words = np.full((self.max_word_num + 1, self.max_word_len), self.char2id['PAD'], dtype=np.int_32)
+        word_mask = np.zeros((self.max_word_num + 1,), dtype=np.int_32)
         for i, word in enumerate(words):
             if word == '###' or word == '???':
                 continue
             word = word.lower()
-            gt_word = np.full((self.max_word_len,), self.char2id['PAD'], dtype=np.int)
+            gt_word = np.full((self.max_word_len,), self.char2id['PAD'], dtype=np.int_)
             for j, char in enumerate(word):
                 if j > self.max_word_len - 1:
                     break
@@ -143,7 +143,7 @@ class PAN_TT(data.Dataset):
         gt_kernels = np.array(gt_kernels)
 
         max_instance = np.max(gt_instance)
-        gt_bboxes = np.zeros((self.max_word_num + 1, 4), dtype=np.int32)
+        gt_bboxes = np.zeros((self.max_word_num + 1, 4), dtype=np.int_32)
         for i in range(1, max_instance + 1):
             ind = gt_instance == i
             if np.sum(ind) == 0:

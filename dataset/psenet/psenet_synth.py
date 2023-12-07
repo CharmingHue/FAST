@@ -260,7 +260,7 @@ class PSENET_Synth(data.Dataset):
         gt_kernels = np.array(gt_kernels)
 
         max_instance = np.max(gt_instance)
-        gt_bboxes = np.zeros((self.max_word_num, 4), dtype=np.int32)
+        gt_bboxes = np.zeros((self.max_word_num, 4), dtype=np.int_32)
         for i in range(1, max_instance + 1):
             ind = gt_instance == i
             if np.sum(ind) == 0:

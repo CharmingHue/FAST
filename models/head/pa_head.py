@@ -83,7 +83,7 @@ class PA_Head(nn.Module):
         with_rec = hasattr(cfg.model, 'recognition_head')
 
         if with_rec:
-            bboxes_h = np.zeros((1, label_num, 4), dtype=np.int32)
+            bboxes_h = np.zeros((1, label_num, 4), dtype=np.int_32)
             instances = [[]]
 
         bboxes = []

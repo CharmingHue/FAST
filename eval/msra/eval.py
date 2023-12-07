@@ -45,7 +45,7 @@ def get_gt(path):
         bbox = bbox.reshape(-1)
 
         bboxes.append(bbox)
-        tags.append(np.int(gt[1]))
+        tags.append(np.int_(gt[1]))
     return np.array(bboxes), tags
 
 

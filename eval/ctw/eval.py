@@ -32,10 +32,10 @@ def get_gt(path):
         # gt = util.str.split(line, ',')
         gt = line.split(',')
 
-        x1 = np.int(gt[0])
-        y1 = np.int(gt[1])
+        x1 = np.int_(gt[0])
+        y1 = np.int_(gt[1])
 
-        bbox = [np.int(gt[i]) for i in range(4, 32)]
+        bbox = [np.int_(gt[i]) for i in range(4, 32)]
         bbox = np.asarray(bbox) + ([x1, y1] * 14)
 
         bboxes.append(bbox)
@@ -70,14 +70,14 @@ if __name__ == '__main__':
         cover = set()
         for pred_id, pred in enumerate(preds):
             pred = np.array(pred)
-            pred = pred.reshape(pred.shape[0] / 2, 2)[:, ::-1]
+            pred = pred.reshape(int(pred.shape[0] / 2), 2)[:, ::-1]
 
             pred_p = plg.Polygon(pred)
 
             flag = False
             for gt_id, gt in enumerate(gts):
                 gt = np.array(gt)
-                gt = gt.reshape(gt.shape[0] / 2, 2)
+                gt = gt.reshape(int(gt.shape[0] / 2), 2)
                 gt_p = plg.Polygon(gt)
 
                 union = get_union(pred_p, gt_p)
