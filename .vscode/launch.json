@@ -1,0 +1,70 @@
+// ! test.py debug config
+{
+    "configurations": [
+        
+        {
+            "name": "Python: 当前文件",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "args": [
+                //* CTW1500 fast_tiny config
+                "config/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt.py",
+                "./pretrained/fast_tiny_ctw_512_finetune_ic17mlt.pth",
+                "--ema",
+                // //* CTW1500 fast_asf_tiny config
+                // "config/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt.py",
+                // "/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt/checkpoint.pth.tar",
+                // "--ema",
+
+                // //* ICDAR2015 config       
+                // "config/fast/ic15/fast_base_ic15_1280_finetune_ic17mlt.py",
+                // "./pretrained/fast_base_ic15_1280_finetune_ic17mlt.pth",
+                // "--ema"
+            ]
+        }
+    ]
+}
+
+// !train.py debug config
+// {
+//     "configurations": [
+    
+//         {
+//             "name": "Python: 当前文件",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${file}",
+//             "console": "integratedTerminal",
+//             "justMyCode": false,
+//             "args": [
+//                 //* CTW1500 config
+//                 "config/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt.py",
+//                 //* ICDAR2015 config       
+//                 // "config/fast/ic15/fast_base_ic15_1280_finetune_ic17mlt.py",
+//             ]
+//         }
+//     ]
+// }
+// {
+//     // 使用 IntelliSense 了解相关属性。 
+//     // 悬停以查看现有属性的描述。
+//     // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+// ! CUDA debug config
+//     "version": "0.2.0",
+//     "configurations": [
+//         {
+//             "name": "CUDA C++: Launch",
+//             "type": "cuda-gdb",
+//             "request": "launch",
+//             "program": ""
+//         },
+//         {
+//             "name": "CUDA C++: Attach",
+//             "type": "cuda-gdb",
+//             "request": "attach"
+//         }
+//     ]
+// }
