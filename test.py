@@ -46,8 +46,9 @@ def test(test_loader, model, cfg):
     results = dict()
 
     for idx, data in enumerate(test_loader):
-        print('Testing %d/%d\r' % (idx, len(test_loader)), flush=True, end='')
-        logging.info('Testing %d/%d\r' % (idx, len(test_loader)))
+        if idx % 50 == 0:
+            print('Testing %d/%d\r' % (idx, len(test_loader)), flush=True, end='')
+            logging.info('Testing %d/%d\r' % (idx, len(test_loader)))
         # prepare input
         if not args.cpu:
             data['imgs'] = data['imgs'].cuda(non_blocking=True)

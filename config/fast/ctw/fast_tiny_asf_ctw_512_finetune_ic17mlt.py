@@ -53,7 +53,7 @@ train_cfg = dict(
     schedule='polylr',
     epoch=600 // repeat_times,
     optimizer='Adam',
-    pretrain='pretrained/checkpoint_30ep.pth',
+    pretrain='/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt/checkpoint.pth.tar',
     # https://github.com/czczup/FAST/releases/download/release/fast_tiny_ic17mlt_640.pth
     save_interval=10 // repeat_times,
 )

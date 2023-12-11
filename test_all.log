@@ -1,0 +1,32 @@
+Loading model and optimizer from checkpoint '/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt//checkpoint_30ep.pth.tar'
+/root/miniconda3/lib/python3.8/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Testing 0/500Testing 50/500Testing 100/500Testing 150/500Testing 200/500Testing 250/500Testing 300/500Testing 350/500Testing 400/500Testing 450/500write json file success!
+Loading model and optimizer from checkpoint '/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt//checkpoint_31ep.pth.tar'
+/root/miniconda3/lib/python3.8/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Testing 0/500Testing 50/500Testing 100/500Testing 150/500Testing 200/500Testing 250/500Testing 300/500Testing 350/500Testing 400/500Testing 450/500write json file success!
+Loading model and optimizer from checkpoint '/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt//checkpoint_32ep.pth.tar'
+/root/miniconda3/lib/python3.8/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Testing 0/500Testing 50/500Testing 100/500Testing 150/500Testing 200/500Testing 250/500Testing 300/500Testing 350/500Testing 400/500Testing 450/500write json file success!
+Loading model and optimizer from checkpoint '/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt//checkpoint_33ep.pth.tar'
+/root/miniconda3/lib/python3.8/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Testing 0/500Testing 50/500Testing 100/500Testing 150/500Testing 200/500Testing 250/500Testing 300/500Testing 350/500Testing 400/500Testing 450/500write json file success!
+Loading model and optimizer from checkpoint '/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt//checkpoint_34ep.pth.tar'
+/root/miniconda3/lib/python3.8/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Testing 0/500Testing 50/500Testing 100/500Testing 150/500Testing 200/500Testing 250/500Testing 300/500Testing 350/500Testing 400/500Testing 450/500write json file success!
+Loading model and optimizer from checkpoint '/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt//checkpoint_35ep.pth.tar'
+/root/miniconda3/lib/python3.8/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Testing 0/500Testing 50/500Testing 100/500Testing 150/500Testing 200/500Testing 250/500Testing 300/500Testing 350/500Testing 400/500Testing 450/500write json file success!
+Loading model and optimizer from checkpoint '/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt//checkpoint_36ep.pth.tar'
+/root/miniconda3/lib/python3.8/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Testing 0/500Testing 50/500Testing 100/500Testing 150/500Testing 200/500Testing 250/500Testing 300/500Testing 350/500Testing 400/500Testing 450/500write json file success!
+Loading model and optimizer from checkpoint '/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt//checkpoint_37ep.pth.tar'
+/root/miniconda3/lib/python3.8/site-packages/mmcv/__init__.py:20: UserWarning: On January 1, 2023, MMCV will release v2.0.0, in which it will remove components related to the training process and add a data transformation module. In addition, it will rename the package names mmcv to mmcv-lite and mmcv-full to mmcv. See https://github.com/open-mmlab/mmcv/blob/master/docs/en/compatibility.md for more details.
+  warnings.warn(
+Testing 0/500Testing 50/500
