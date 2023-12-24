@@ -14,10 +14,15 @@ from PIL import Image
 from tqdm import tqdm
 
 
-msra_pred_dir = 'outputs/submit_msra/'
-ctw_pred_dir = 'outputs/submit_ctw/'
-tt_pred_dir = 'outputs/submit_tt/'
-ic15_pred_dir = 'outputs/submit_ic15/'
+msra_pred_dir1 = 'outputs/submit_msra/'
+ctw_pred_dir1 = 'outputs/submit_ctw/'
+tt_pred_dir1 = 'outputs/submit_tt/'
+ic15_pred_dir1 = 'outputs/submit_ic15/'
+
+msra_pred_dir2 = 'outputs/submit_msra/'
+ctw_pred_dir2 = 'outputs/submit_ctw/'
+tt_pred_dir2 = 'outputs/submit_tt/'
+ic15_pred_dir2 = 'outputs/submit_ic15/'
 
 
 def get_pred(pred_path):
@@ -30,8 +35,7 @@ def get_pred(pred_path):
         bbox = [int(gt[i]) for i in range(len(gt))]
         bboxes.append(bbox)
         words.append('???')
-    return bboxes, words
-    # return np.array(bboxes), words
+    return np.array(bboxes), words
 
 
 def draw(img, boxes, words):
@@ -55,13 +59,16 @@ def draw(img, boxes, words):
     return img
     
     
-def visual(get_ann, data_dir, gt_dir, pred_dir, dataset):
+def visual(get_ann, data_dir, gt_dir, pred_dir, pred_dir2, args):
     
+    dataset = args.dataset
     img_names = [img_name for img_name in mmcv.utils.scandir(data_dir, '.jpg')]
     img_names.extend([img_name for img_name in mmcv.utils.scandir(data_dir, '.png')])
     img_names.extend([img_name for img_name in mmcv.utils.scandir(data_dir, '.JPG')])
     
     img_paths, gt_paths, pred_paths = [], [], []
+    if args.compare_model:
+        pred_paths2 = []
     
     for idx, img_name in enumerate(img_names):
         img_path = data_dir + img_name
@@ -75,6 +82,10 @@ def visual(get_ann, data_dir, gt_dir, pred_dir, dataset):
             pred_name = img_name.split('.')[0] + '.txt'
             pred_path = pred_dir + pred_name
             pred_paths.append(pred_path)
+            if args.compare_model:
+                pred_name2 = img_name.split('.')[0] + '.txt'
+                pred_path2 = pred_dir2 + pred_name2
+                pred_paths2.append(pred_path2)
         elif dataset == 'ctw': # CTW-1500
             gt_name = img_name.split('.')[0] + '.txt'
             gt_path = gt_dir + gt_name
@@ -82,6 +93,10 @@ def visual(get_ann, data_dir, gt_dir, pred_dir, dataset):
             pred_name = img_name.split('.')[0] + '.txt'
             pred_path = pred_dir + pred_name
             pred_paths.append(pred_path)
+            if args.compare_model:
+                pred_name2 = img_name.split('.')[0] + '.txt'
+                pred_path2 = pred_dir2 + pred_name2
+                pred_paths2.append(pred_path2)
         elif dataset == 'tt': # Total-Text
             gt_name = 'poly_gt_' + img_name.split('.')[0] + '.mat'
             gt_path = gt_dir + gt_name
@@ -89,6 +104,10 @@ def visual(get_ann, data_dir, gt_dir, pred_dir, dataset):
             pred_name = img_name.split('.')[0] + '.txt'
             pred_path = pred_dir + pred_name
             pred_paths.append(pred_path)
+            if args.compare_model:
+                pred_name2 = img_name.split('.')[0] + '.txt'
+                pred_path2 = pred_dir2 + pred_name2
+                pred_paths2.append(pred_path2)
         elif dataset == 'ic15': # ICDAR 2015
             gt_name = 'gt_' + img_name.split('.')[0] + '.txt'
             gt_path = gt_dir + gt_name
@@ -96,6 +115,10 @@ def visual(get_ann, data_dir, gt_dir, pred_dir, dataset):
             pred_name = "res_" + img_name.split('.')[0] + '.txt'
             pred_path = pred_dir + pred_name
             pred_paths.append(pred_path)
+            if args.compare_model:
+                pred_name2 = "res_" + img_name.split('.')[0] + '.txt'
+                pred_path2 = pred_dir2 + pred_name2
+                pred_paths2.append(pred_path2)
             
     for index, (img_path, gt_path, pred_path) in tqdm(enumerate(zip(img_paths, gt_paths, pred_paths)), total=len(img_paths)):
         img = get_img(img_path) # load image
@@ -127,7 +150,7 @@ def visual(get_ann, data_dir, gt_dir, pred_dir, dataset):
             if pred.shape[0] > 0:
                 pred = np.reshape(pred, (pred.shape[0], -1, 2)).astype('int32')
         elif dataset == 'ctw':
-            # pred = pred.tolist()
+            pred = pred.tolist()
             for i in range(len(pred)):
                 pred[i] = np.reshape(np.flipud(pred[i]), (-1, 2)).astype('int32')
         elif dataset == 'tt':
@@ -139,20 +162,49 @@ def visual(get_ann, data_dir, gt_dir, pred_dir, dataset):
             for i in range(len(pred)):
                 pred[i] = np.reshape(pred[i], (-1, 2)).astype('int32')
                 
+        if args.compare_model:
+            pred_path2 = pred_paths2[index]
+            # load predictions
+            pred2, _ = get_pred(pred_path2)
+            if dataset == 'msra': # process predictions
+                if pred2.shape[0] > 0:
+                    pred2 = np.reshape(pred2, (pred2.shape[0], -1, 2)).astype('int32')
+            elif dataset == 'ctw':
+                pred2 = pred2.tolist()
+                for i in range(len(pred2)):
+                    pred2[i] = np.reshape(np.flipud(pred2[i]), (-1, 2)).astype('int32')
+            elif dataset == 'tt':
+                pred2 = pred2.tolist()
+                for i in range(len(pred)):
+                    pred2[i] = np.reshape(np.flipud(pred2[i]), (-1, 2)).astype('int32')
+            elif dataset == 'ic15':
+                pred2 = pred2.tolist()
+                for i in range(len(pred)):
+                    pred2[i] = np.reshape(pred2[i], (-1, 2)).astype('int32')
+                               
         img_ = img.copy()
         img_pred = draw(img, pred, _) # draw predictions on images
         img_gt = draw(img_, gt, word) # draw ground truths on images
-        img = np.hstack((img_gt, img_pred)) # stack two images
+        if args.compare_model:
+            img_pred2 = draw(img, pred2, _) # draw predictions on images
+            img = np.hstack((img_gt, img_pred, img_pred2)) # stack two images
+        else:
+            img = np.hstack((img_gt, img_pred)) # stack two images
         img = Image.fromarray(img)
         mmcv.mkdir_or_exist(f"visual/{dataset}")
         img.save(f"visual/{dataset}/{index}.png") # save images into visual/
         
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Hyperparams')
     parser.add_argument('--dataset', nargs='?', type=str, required=True,
                         choices=['tt', 'ctw', 'msra', 'ic15'])
     parser.add_argument('--show-gt', action="store_true")
+    parser.add_argument('--compare_model', action='store_true', help='Compare two models')
+    parser.add_argument('--predict_path1', type=str, help='Path to the first predict_path', default=None)
+    parser.add_argument('--predict_path2', type=str, help='Path to the second predict_path', default=None)
+
     # show the ground truths with predictions
     args = parser.parse_args()
     
@@ -163,22 +215,44 @@ if __name__ == '__main__':
         get_ann = get_msra_ann
         test_data_dir = msra_test_data_dir
         test_gt_dir = msra_test_gt_dir
-        pred_dir = msra_pred_dir
+        if args.compare_model and args.predict_path1 is None and args.predict_path2 is None:
+                pred_dir1 = msra_pred_dir1
+                pred_dir2 = msra_pred_dir2
+        else:
+            pred_dir1 = msra_pred_dir1
+            pred_dir2 = msra_pred_dir2
     elif args.dataset == 'ctw':
         get_ann = get_ctw_ann
         test_data_dir = ctw_test_data_dir
         test_gt_dir = ctw_test_gt_dir
-        pred_dir = ctw_pred_dir
+        if args.compare_model and args.predict_path1 is None and args.predict_path2 is None:
+                pred_dir1 = ctw_pred_dir1
+                pred_dir2 = ctw_pred_dir2
+        else:
+            pred_dir1 = ctw_pred_dir1
+            pred_dir2 = ctw_pred_dir2
     elif args.dataset == 'tt':
         get_ann = get_tt_ann
         test_data_dir = tt_test_data_dir
         test_gt_dir = tt_test_gt_dir
-        pred_dir = tt_pred_dir
+        if args.compare_model and args.predict_path1 is None and args.predict_path2 is None:
+                pred_dir1 = tt_pred_dir1
+                pred_dir2 = tt_pred_dir2
+        else:
+            pred_dir1 = tt_pred_dir1
+            pred_dir2 = tt_pred_dir2
     elif args.dataset == 'ic15':
         get_ann = get_ic15_ann
         test_data_dir = ic15_test_data_dir
         test_gt_dir = ic15_test_gt_dir
-        pred_dir = ic15_pred_dir
+        if args.compare_model and args.predict_path1 is None and args.predict_path2 is None:
+                pred_dir1 = ic15_pred_dir1
+                pred_dir2 = ic15_pred_dir2
+        else:
+            pred_dir1 = ic15_pred_dir1
+            pred_dir2 = ic15_pred_dir2
+
+            
         
     print(test_data_dir)
-    visual(get_ann, test_data_dir, test_gt_dir, pred_dir, args.dataset)
+    visual(get_ann, test_data_dir, test_gt_dir,pred_dir1, pred_dir2, args)

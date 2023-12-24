@@ -1,16 +1,16 @@
 model = dict(
     type='FAST',
     backbone=dict(
-        type='fast_backbone',
-        config='config/fast/nas-configs/fast_tiny.config'
+        type='fsnet_backbone',
+        config='config/fast/nas-configs/fast_base_fsnet.config'
     ),
     neck=dict(
-        type='fast_neck_asf',
-        config='config/fast/nas-configs/fast_tiny_asf.config'
+        type='fast_neck',
+        config='config/fast/nas-configs/fast_base_fsnet.config'
     ),
     detection_head=dict(
         type='fast_head',
-        config='config/fast/nas-configs/fast_tiny.config',
+        config='config/fast/nas-configs/fast_base_fsnet.config',
         pooling_size=9,
         dropout_ratio=0.1,
         loss_text=dict(
@@ -30,7 +30,7 @@ model = dict(
 )
 repeat_times = 10
 data = dict(
-    batch_size=128,
+    batch_size=16,
     train=dict(
         type='FAST_CTW',
         split='train',
@@ -53,14 +53,13 @@ train_cfg = dict(
     schedule='polylr',
     epoch=600 // repeat_times,
     optimizer='Adam',
-    # pretrain='/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt/checkpoint.pth.tar',
-    pretrain='pretrained/fast_tiny_ic17mlt_640.pth',
-    # https://github.com/czczup/FAST/releases/download/release/fast_tiny_ic17mlt_640.pth
+    # pretrain='pretrained/fast_base_ic17mlt_640.pth',
+    # https://github.com/czczup/FAST/releases/download/release/fast_base_ic17mlt_640.pth
     save_interval=10 // repeat_times,
 )
 test_cfg = dict(
-    min_score=0.88,
+    min_score=0.87,
     min_area=200,
     bbox_type='poly',
-    result_path='outputs/submit_ctw/'
+    result_path='outputs/submit_ctw_base_fsnet/'
 )

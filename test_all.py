@@ -22,7 +22,7 @@ def generate_results_from_json(min_score, dataset, result_path):
 
 
 def ctw_eval(ep):
-    run_cmd = 'python test.py %s %s/checkpoint_%dep.pth.tar --min-score 0' % (args.config, args.checkpoint, ep)
+    run_cmd = 'python test.py %s %s/checkpoint_%dep.pth.tar --min-score %s' % (args.config, args.checkpoint, ep, args.min_score)
     if args.ema:
         run_cmd += " --ema"
     print(run_cmd)
@@ -180,6 +180,7 @@ if __name__ == '__main__':
     parser.add_argument('--end-ep', nargs='?', type=int, required=True)
     parser.add_argument('--debug', action='store_true')
     parser.add_argument('--ema', action='store_true')
+    parser.add_argument('--min-score', nargs='?', type=float, default=0) 
     args = parser.parse_args()
 
     root = os.path.dirname(os.path.abspath(__file__))
