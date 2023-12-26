@@ -21,8 +21,8 @@ __pycache__/
 *env.sh
 *.tar
 *.gz
-*.zip
-*.bak
+#*.zip
+#*.bak
 *checkpoints/
 *dataloader_vis/
 *pretrained/
