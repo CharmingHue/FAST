@@ -1,0 +1,6 @@
+Loading model and optimizer from checkpoint 'checkpoints/fast_base_asf_ctw_512_finetune_ic17mlt//checkpoint_20ep.pth.tar'
+Testing 0/500Testing 50/500Testing 100/500Testing 150/500Testing 200/500Testing 250/500Testing 300/500Testing 350/500Testing 400/500Testing 450/500write json file success!
+python test.py config/fast/ctw/fast_base_asf_ctw_512_finetune_ic17mlt.py checkpoints/fast_base_asf_ctw_512_finetune_ic17mlt//checkpoint_20ep.pth.tar --min-score 0 --ema
+epoch: 20
+best f-measure 0.000000 at ep 0 with min-score 0.00
+

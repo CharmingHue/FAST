@@ -203,7 +203,6 @@ def main(args):
         model, optimizer = apex.amp.initialize(model.cuda(), optimizer, opt_level="O1")
         logging.info("Initializing mixed precision done.")
 
-
     model = torch.nn.DataParallel(model).cuda()
     
     start_epoch = 0
@@ -219,7 +218,11 @@ def main(args):
             state_dict = checkpoint['model']
             new_state_dict = {}
             for k, v in state_dict.items():
-                new_state_dict["module.backbone."+k] = v
+                if k in model.state_dict() and v.size() == model.state_dict()[k].size():
+                    new_state_dict[k] = v
+                else:
+                    logging.info(f"Skipping {k} as it is not in the new model or size mismatch.")
+                # new_state_dict["module.backbone."+k] = v
             state_dict = new_state_dict
         logging.info(model.load_state_dict(state_dict, strict=False))
     if args.resume:
