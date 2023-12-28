@@ -61,5 +61,5 @@ test_cfg = dict(
     min_score=0.87,
     min_area=200,
     bbox_type='poly',
-    result_path='outputs/submit_ctw_base_fsnet/'
+    result_path='outputs/fast_base_fsnet_ctw_512_finetune_ic17mlt/submit_ctw'
 )

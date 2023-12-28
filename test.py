@@ -69,7 +69,8 @@ def test(test_loader, model, cfg):
 
     if not cfg.report_speed:
         results = json.dumps(results)
-        with open('outputs/output.json', 'w', encoding='utf-8') as json_file:
+        output_json = os.path.join(args.output_path, 'output.json')
+        with open(output_json, 'w', encoding='utf-8') as json_file:
             json.dump(results, json_file, ensure_ascii=False)
             print("write json file success!")
 
@@ -190,8 +191,13 @@ if __name__ == '__main__':
     parser.add_argument('--cpu', action='store_true')
 
     args = parser.parse_args()
+    args.__dict__['output_path'] = os.path.join('outputs', args.config.split('/')[-1].split('.')[0])
+    os.makedirs(args.output_path, exist_ok=True)
     mmcv.mkdir_or_exist("./speed_test")
     config_name = os.path.basename(args.config)
-    logging.basicConfig(filename=f'./speed_test/{config_name}.txt', level=logging.INFO)
+    logging.basicConfig(filename=f'./speed_test/{config_name}.txt', 
+                        level=logging.INFO,
+                        format='%(asctime)s  %(filename)s : %(levelname)s  %(message)s',
+                        datefmt='%Y-%m-%d %A %H:%M:%S')
 
     main(args)

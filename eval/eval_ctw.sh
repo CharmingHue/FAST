@@ -1,1 +1,1 @@
-cd ctw && python eval.py && cd ..
+cd ctw && python eval.py $1&& cd ..

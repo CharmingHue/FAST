@@ -3,11 +3,13 @@ import subprocess
 import argparse
 import json
 import os
+import logging
 
 
 def generate_results_from_json(min_score, dataset, result_path):
     rf = ResultFormat(dataset, result_path)
-    file = open("outputs/output.json", "r")
+    output_json = os.path.join(args.output_path, 'output.json')
+    file = open(output_json, "r")
     fileJson = json.load(file)
     fileJson = json.loads(fileJson)
     for k, v in fileJson.items():
@@ -26,14 +28,17 @@ def ctw_eval(ep):
     if args.ema:
         run_cmd += " --ema"
     print(run_cmd)
+    logging.info(run_cmd)
     run_cmd = cd_root_cmd + " && " + run_cmd
-    print('epoch: %d' % ep)
+    print('[epoch: %d/%d]' % (ep, args.end_ep))
+    logging.info('[epoch: %d/%d]' % (ep, args.end_ep))
     p = subprocess.Popen(run_cmd, shell=True, stderr=subprocess.STDOUT)
     p.wait()
     f_list = []
-    for i in range(80, 90 + 1):
-        generate_results_from_json(min_score=i/100, dataset='CTW', result_path='outputs/submit_ctw/')
-        eval_cmd = cd_root_cmd + " && " + 'cd eval && sh eval_ctw.sh'
+    result_path = os.path.join(args.output_path, 'submit_ctw')
+    for i in range(80, 95 + 1):
+        generate_results_from_json(min_score=i/100, dataset='CTW', result_path=result_path)
+        eval_cmd = cd_root_cmd + " && " + 'cd eval && sh eval_ctw.sh %s' % ('../../' + result_path)
         p = subprocess.Popen(eval_cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         p.wait()
         f = 0
@@ -42,7 +47,8 @@ def ctw_eval(ep):
             line = str(line).replace('\\n', '').replace('\n', '').replace('b\'', '').replace('\'', '')
             if args.debug: print(line)
             if 'f:' in line:
-                # print("Min-score: %.2f |" % (i / 100), line)
+                print("Min-score: %.2f |" % (i / 100), line)
+                logging.info("Min-score: %.2f | %s" % (i / 100, line))
                 f = float(line.split('f: ')[-1])
                 f_list.append(f)
                 global best_f, best_ep, best_line, best_min_score
@@ -54,7 +60,9 @@ def ctw_eval(ep):
                 break
         p.stdout.close()
     print('best f-measure %f at ep %d with min-score %.2f' % (best_f, best_ep, best_min_score))
+    logging.info('best f-measure %f at ep %d with min-score %.2f' % (best_f, best_ep, best_min_score))
     print(best_line)
+    logging.info(best_line)
     return max(f_list)
 
 
@@ -63,14 +71,17 @@ def ic15_eval(ep):
     if args.ema:
         run_cmd += " --ema"
     print(run_cmd)
+    logging.info(run_cmd)
     run_cmd = cd_root_cmd + " && " + run_cmd
-    print('epoch: %d' % ep)
+    print('[epoch: %d/%d]' % (ep, args.end_ep))
+    logging.info('[epoch: %d/%d]' % (ep, args.end_ep))
     p = subprocess.Popen(run_cmd, shell=True, stderr=subprocess.STDOUT)
     p.wait()
     f_list = []
+    result_path = os.path.join(args.output_path, 'submit_ic15.zip')
 
     for i in range(80, 90 + 1):
-        generate_results_from_json(min_score=i/100, dataset='IC15', result_path='outputs/submit_ic15.zip')
+        generate_results_from_json(min_score=i/100, dataset='IC15', result_path=result_path)
         eval_cmd = cd_root_cmd + " && " + 'cd eval && sh eval_ic15.sh'
         p = subprocess.Popen(eval_cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         p.wait()
@@ -80,7 +91,8 @@ def ic15_eval(ep):
             line = str(line).replace('\\n', '').replace('\n', '').replace('b\'', '').replace('\'', '')
             if args.debug: print(line)
             if 'hmean' in line:
-                # print("Min-score: %.2f |" % (i / 100), line)
+                print("Min-score: %.2f |" % (i / 100), line)
+                logging.info("Min-score: %.2f | %s" % (i / 100, line))
                 f = float(line.split(', ')[-2].split('\"hmean\": ')[-1])
                 f_list.append(f)
                 global best_f, best_ep, best_line, best_min_score
@@ -92,7 +104,9 @@ def ic15_eval(ep):
                 break
         p.stdout.close()
     print('best f-measure %f at ep %d with min-score %.2f' % (best_f, best_ep, best_min_score))
+    logging.info('best f-measure %f at ep %d with min-score %.2f' % (best_f, best_ep, best_min_score))
     print(best_line)
+    logging.info(best_line)
     return max(f_list)
 
 
@@ -101,13 +115,17 @@ def tt_eval(ep):
     if args.ema:
         run_cmd += " --ema"
     print(run_cmd)
+    logging.info(run_cmd)
     run_cmd = cd_root_cmd + " && " + run_cmd
-    print('epoch: %d' % ep)
+    print('[epoch: %d/%d]' % (ep, args.end_ep))
+    logging.info('[epoch: %d/%d]' % (ep, args.end_ep))
     p = subprocess.Popen(run_cmd, shell=True, stderr=subprocess.STDOUT)
     p.wait()
     f_list = []
+    result_path = os.path.join(args.output_path, 'submit_tt')
+    
     for i in range(80, 90 + 1):
-        generate_results_from_json(min_score=i/100, dataset='TT', result_path='outputs/submit_tt/')
+        generate_results_from_json(min_score=i/100, dataset='TT', result_path=result_path)
         eval_cmd = cd_root_cmd + " && " + 'cd eval && sh eval_tt.sh'
         p = subprocess.Popen(eval_cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         p.wait()
@@ -117,7 +135,8 @@ def tt_eval(ep):
             line = str(line).replace('\\n', '').replace('\n', '').replace('b\'', '').replace('\'', '')
             if args.debug: print(line)
             if 'Hmean:_' in line:
-                # print("Min-score: %.2f |" % (i / 100), line)
+                print("Min-score: %.2f |" % (i / 100), line)
+                logging.info("Min-score: %.2f | %s" % (i / 100, line))
                 f = float(line.split('Hmean:_')[-1])
                 f_list.append(f)
                 global best_f, best_ep, best_line, best_min_score
@@ -129,7 +148,9 @@ def tt_eval(ep):
                 break
         p.stdout.close()
     print('best f-measure %f at ep %d with min-score %.2f'%(best_f, best_ep, best_min_score))
+    logging.info('best f-measure %f at ep %d with min-score %.2f'%(best_f, best_ep, best_min_score))
     print(best_line)
+    logging.info(best_line)
     return max(f_list)
 
 
@@ -138,13 +159,17 @@ def msra_eval(ep):
     if args.ema:
         run_cmd += " --ema"
     print(run_cmd)
+    logging.info(run_cmd)
     run_cmd = cd_root_cmd + " && " + run_cmd
-    print('epoch: %d' % ep)
+    print('[epoch: %d/%d]' % (ep, args.end_ep))
+    logging.info('[epoch: %d/%d]' % (ep, args.end_ep))
     p = subprocess.Popen(run_cmd, shell=True, stderr=subprocess.STDOUT)
     p.wait()
     f_list = []
+    result_path = os.path.join(args.output_path, 'submit_msra')
+    
     for i in range(80, 95 + 1):
-        generate_results_from_json(min_score=i/100, dataset='MSRA', result_path='outputs/submit_msra/')
+        generate_results_from_json(min_score=i/100, dataset='MSRA', result_path=result_path)
         eval_cmd = cd_root_cmd + " && " + 'cd eval && sh eval_msra.sh'
         p = subprocess.Popen(eval_cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         p.wait()
@@ -154,7 +179,8 @@ def msra_eval(ep):
             line = str(line).replace('\\n', '').replace('\n', '').replace('b\'', '').replace('\'', '')
             if args.debug: print(line)
             if 'f:' in line:
-                # print("Min-score: %.2f |" % (i / 100), line)
+                print("Min-score: %.2f |" % (i / 100), line)
+                logging.info("Min-score: %.2f | %s" % (i / 100, line))
                 f = float(line.split('f: ')[-1])
                 f_list.append(f)
                 global best_f, best_ep, best_line, best_min_score
@@ -166,7 +192,9 @@ def msra_eval(ep):
                 break
         p.stdout.close()
     print('best f-measure %f at ep %d with min-score %.2f'%(best_f, best_ep, best_min_score))
+    logging.info('best f-measure %f at ep %d with min-score %.2f'%(best_f, best_ep, best_min_score))
     print(best_line)
+    logging.info(best_line)
     return max(f_list)
 
 
@@ -202,6 +230,15 @@ if __name__ == '__main__':
         eval_ = msra_eval
         
     best_f_list = []
+    
+    config_head = args.config.split('/')[-1].split('.')[0]
+    args.__dict__['output_path'] = os.path.join('outputs', config_head)
+    os.makedirs(args.output_path, exist_ok=True)
+    logging.basicConfig(filename=os.path.join(args.output_path, 'test_all_%s.log' % (config_head)), 
+                        level=logging.INFO,
+                        format='%(asctime)s  %(filename)s : %(levelname)s  %(message)s',
+                        datefmt='%Y-%m-%d %A %H:%M:%S')
+    
     for ep in range(args.start_ep, args.end_ep + 1, 1):
         best_f_list.append(eval_(ep))
     

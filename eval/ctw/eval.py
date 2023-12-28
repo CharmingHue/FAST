@@ -1,11 +1,7 @@
 import file_util
 import Polygon as plg
 import numpy as np
-
-project_root = '../../'
-
-pred_root = project_root + 'outputs/submit_ctw'
-gt_root = project_root + 'data/CTW1500/test/text_label_circum/'
+import argparse
 
 
 def get_pred(path):
@@ -56,7 +52,18 @@ def get_intersection(pD, pG):
 
 
 if __name__ == '__main__':
+    
+    parser = argparse.ArgumentParser(description='params')
+    parser.add_argument('result_path', nargs='?', type=str)
+    parser.add_argument('--gt-path', default='data/CTW1500/test/text_label_circum/', type=str)
+    parser.add_argument('--threshold', default=0.5, type=float)
+    args = parser.parse_args()
+    
     th = 0.5
+    
+    pred_root =  args.result_path
+    gt_root = '../../' + args.gt_path
+    print(pred_root)
     pred_list = file_util.read_dir(pred_root)
 
     tp, fp, npos = 0, 0, 0

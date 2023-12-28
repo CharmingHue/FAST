@@ -1,57 +1,7 @@
-// // ! test.py debug config
-// {
-//     "configurations": [
-
-//         {
-//             "name": "Python: 当前文件",
-//             "type": "python",
-//             "request": "launch",
-//             "program": "${file}",
-//             "console": "integratedTerminal",
-//             "justMyCode": false,
-//             "args": [
-//                 //* CTW1500 [fast_tiny] config
-//                 // "config/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt.py",
-//                 // "./pretrained/fast_tiny_ctw_512_finetune_ic17mlt.pth",
-//                 // "--ema",
-//                 //* CTW1500 Evaluate the [speed]
-//                 // "config/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt.py",
-//                 // " --report-speed",
-
-
-//                 //* CTW1500 [fast_asf_tiny] config
-//                 // "config/fast/ctw/fast_tiny_asf_ctw_512_finetune_ic17mlt.py",
-//                 // "/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt/checkpoint.pth.tar",
-//                 // "--ema",
-//                 //* CTW1500 Evaluate the [speed]
-//                 // "config/fast/ctw/fast_tiny_asf_ctw_512_finetune_ic17mlt.py",
-//                 // "--report-speed",
-//                 //* CTW1500 [Evaluate all] checkpoints in one folder
-//                 "config/fast/ctw/fast_tiny_asf_ctw_512_finetune_ic17mlt.py",
-//                 "/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt/",
-//                 "--dataset",
-//                 "ctw",
-//                 "--start-ep",
-//                 "30",
-//                 "--end-ep",
-//                 "60",
-//                 "--ema",
-
-
-
-//                 // //* ICDAR2015 config       
-//                 // "config/fast/ic15/fast_base_ic15_1280_finetune_ic17mlt.py",
-//                 // "./pretrained/fast_base_ic15_1280_finetune_ic17mlt.pth",
-//                 // "--ema"
-//             ]
-//         }
-//     ]
-// }
-
-// !train.py debug config
+// ! test.py debug config
 {
     "configurations": [
-    
+
         {
             "name": "Python: 当前文件",
             "type": "python",
@@ -60,14 +10,65 @@
             "console": "integratedTerminal",
             "justMyCode": false,
             "args": [
-                //* CTW1500 config
+                //* CTW1500 [fast_tiny] config
+                // "config/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt.py",
+                // "./pretrained/fast_tiny_ctw_512_finetune_ic17mlt.pth",
+                // "--ema",
+                //* CTW1500 Evaluate the [speed]
+                // "config/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt.py",
+                // " --report-speed",
+
+
+                //* CTW1500 [fast_asf_tiny] config
+                // "config/fast/ctw/fast_tiny_asf_ctw_512_finetune_ic17mlt.py",
+                // "/root/autodl-fs/checkpoints/fast/ctw/fast_tiny_ctw_512_finetune_ic17mlt/checkpoint.pth.tar",
+                // "--ema",
+                //* CTW1500 Evaluate the [speed]
+                // "config/fast/ctw/fast_tiny_asf_ctw_512_finetune_ic17mlt.py",
+                // "--report-speed",
+                //* CTW1500 [Evaluate all] checkpoints in one folder
                 "config/fast/ctw/fast_base_fsnet_ctw_512_finetune_ic17mlt.py",
-                //* ICDAR2015 config       
+                "~/autodl-tmp/fast_base_fsnet_ctw_512_finetune_ic17mlt_init/",
+                "--dataset",
+                "ctw",
+                "--start-ep",
+                "1",
+                "--end-ep",
+                "10",
+                "--ema",
+
+
+
+                // //* ICDAR2015 config       
                 // "config/fast/ic15/fast_base_ic15_1280_finetune_ic17mlt.py",
+                // "./pretrained/fast_base_ic15_1280_finetune_ic17mlt.pth",
+                // "--ema"
             ]
         }
     ]
 }
+
+// !train.py debug config
+// {
+//     "configurations": [
+
+    
+//         {
+//             "name": "Python: 当前文件",
+//             "type": "python",
+//             "request": "launch",
+//             "program": "${file}",
+//             "console": "integratedTerminal",
+//             "justMyCode": false,
+//             "args": [
+//                 //* CTW1500 config
+//                 "config/fast/ctw/fast_base_fsnet_ctw_512_finetune_ic17mlt.py",
+//                 //* ICDAR2015 config       
+//                 // "config/fast/ic15/fast_base_ic15_1280_finetune_ic17mlt.py",
+//             ]
+//         }
+//     ]
+// }
 // {
 //     // 使用 IntelliSense 了解相关属性。 
 //     // 悬停以查看现有属性的描述。
