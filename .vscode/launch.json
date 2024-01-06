@@ -27,16 +27,33 @@
                 // "config/fast/ctw/fast_tiny_asf_ctw_512_finetune_ic17mlt.py",
                 // "--report-speed",
                 //* CTW1500 [Evaluate all] checkpoints in one folder
-                "config/fast/ctw/fast_base_fsnet_ctw_512_finetune_ic17mlt.py",
-                "~/autodl-tmp/fast_base_fsnet_ctw_512_finetune_ic17mlt_init/",
-                "--dataset",
-                "ctw",
-                "--start-ep",
-                "1",
-                "--end-ep",
-                "10",
-                "--ema",
+                // "config/fast/ctw/fast_base_fsnet_ctw_512_finetune_ic17mlt.py",
+                // "~/autodl-tmp/fast_base_fsnet_ctw_512_finetune_ic17mlt_init/",
+                // "--dataset",
+                // "ctw",
+                // "--start-ep",
+                // "1",
+                // "--end-ep",
+                // "10",
+                // "--ema",
 
+
+                //* TotalText [test] checkpoint
+                // "config/fast/tt/fast_base_tt_512_init.py",
+                // "~/autodl-fs/fast_base_tt_512_init/checkpoint.pth.tar",
+                // "--ema",
+                //* TotalText [Evaluate] checkpoint
+                // "outputs/fast_base_tt_512_init/submit_tt",
+                //* TotalText [Evaluate all] checkpoints in one folder
+                "config/fast/tt/fast_base_tt_512_init.py",
+                "~/autodl-fs/fast_base_tt_512_init",
+                "--dataset",
+                "tt",
+                "--start-ep",
+                "30",
+                "--end-ep",
+                "60",
+                "--ema",
 
 
                 // //* ICDAR2015 config       

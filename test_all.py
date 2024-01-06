@@ -126,18 +126,19 @@ def tt_eval(ep):
     
     for i in range(80, 90 + 1):
         generate_results_from_json(min_score=i/100, dataset='TT', result_path=result_path)
-        eval_cmd = cd_root_cmd + " && " + 'cd eval && sh eval_tt.sh'
+        eval_cmd = cd_root_cmd + " && " + 'cd eval && sh eval_tt.sh %s' % ('../../' + result_path)
         p = subprocess.Popen(eval_cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         p.wait()
+
         f = 0
         line = ''
         for line in iter(p.stdout.readline, b''):
             line = str(line).replace('\\n', '').replace('\n', '').replace('b\'', '').replace('\'', '')
             if args.debug: print(line)
-            if 'Hmean:_' in line:
+            if 'Hmean:' in line:
                 print("Min-score: %.2f |" % (i / 100), line)
                 logging.info("Min-score: %.2f | %s" % (i / 100, line))
-                f = float(line.split('Hmean:_')[-1])
+                f = float(line.split('Hmean:')[-1])
                 f_list.append(f)
                 global best_f, best_ep, best_line, best_min_score
                 if f >= best_f:

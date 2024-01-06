@@ -3,6 +3,8 @@ import numpy as np
 from os import listdir
 from scipy import io
 import numpy as np
+import argparse
+import os
 # mask counting version
 # from polygon_wrapper import iod
 # from polygon_wrapper import area_of_intersection
@@ -22,37 +24,47 @@ Input format: y0,x0, ..... yn,xn. Each detection is separated by the end of line
 """
 
 def area(x, y):
+    '''计算多边形的面积'''
     polygon = Polygon(np.stack([x, y], axis=1))
     return float(polygon.area)
 
 
 def area_of_intersection(det_x, det_y, gt_x, gt_y):
+    '''计算两个多边形的交集面积'''
     p1 = Polygon(np.stack([det_x, det_y], axis=1)).buffer(0)
     p2 = Polygon(np.stack([gt_x, gt_y], axis=1)).buffer(0)
     return float(p1.intersection(p2).area)
 
 def area_of_union(det_x, det_y, gt_x, gt_y):
+    '''计算两个多边形的并集面积'''
     p1 = Polygon(np.stack([det_x, det_y], axis=1)).buffer(0)
     p2 = Polygon(np.stack([gt_x, gt_y], axis=1)).buffer(0)
     return float(p1.union(p2).area)
 
 
 def iou(det_x, det_y, gt_x, gt_y):
+    '''计算交并比'''
     return area_of_intersection(det_x, det_y, gt_x, gt_y) / (area_of_union(det_x, det_y, gt_x, gt_y) + 1.0)
 
 
 def iod(det_x, det_y, gt_x, gt_y):
     """
     This helper determine the fraction of intersection area over detection area
+    计算交集面积与检测区域面积的比值
     """
     return area_of_intersection(det_x, det_y, gt_x, gt_y) / (area(det_x, det_y) + 1.0)
 
 
+parser = argparse.ArgumentParser(description='params')
+parser.add_argument('result_path', nargs='?', type=str)
+parser.add_argument('--gt-path', default='data/total_text/Groundtruth/Polygon/Test/', type=str)
+args = parser.parse_args()
+
 project_root = '../../'
 
-input_dir = project_root + 'outputs/submit_tt/'
-gt_dir = project_root + 'data/total_text/Groundtruth/Polygon/Test/'
-fid_path = project_root + 'outputs/res_tt.txt'
+input_dir = args.result_path
+gt_dir =  project_root + args.gt_path
+fid_path = os.path.join(os.path.dirname(input_dir), 'res_tt.txt')
 
 allInputs = listdir(input_dir)
 
@@ -255,7 +267,7 @@ def many_to_one(local_sigma_table, local_tau_table, local_accumulative_recall,
     return local_accumulative_recall, local_accumulative_precision, global_accumulative_recall, global_accumulative_precision, gt_flag, det_flag
 
 for idx in range(len(global_sigma)):
-    print(allInputs[idx])
+    # print(allInputs[idx])
     local_sigma_table = global_sigma[idx]
     local_tau_table = global_tau[idx]
 
@@ -305,7 +317,7 @@ for idx in range(len(global_sigma)):
     except ZeroDivisionError:
         local_recall = 0
 
-    temp = ('%s______/Precision:_%s_______/Recall:_%s\n' % (allInputs[idx], str(local_precision), str(local_recall)))
+    temp = ('%s\t: Precision:%.4f Recall:%.4f\n' % (allInputs[idx], local_precision, local_recall))
     fid.write(temp)
     fid.close()
 try:
@@ -324,8 +336,8 @@ except ZeroDivisionError:
     f_score = 0
 
 fid = open(fid_path, 'a')
-hmean = 2 * precision * recall / (precision + recall)
-temp = ('Precision:_%s_______/Recall:_%s/Hmean:_%s\n' %(str(precision), str(recall), str(hmean)))
+hmean = 2 * precision * recall / (precision + recall + 1e-6)
+temp = ('Precision:%.4f Recall:%.4f Hmean:%.4f\n' %(precision, recall, hmean))
 
 fid.write(temp)
 fid.close()

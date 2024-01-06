@@ -1,0 +1,611 @@
+2024-01-05 Friday 21:05:17  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint.pth.tar'
+2024-01-05 Friday 21:05:19  test.py : INFO  Testing 0/300
+2024-01-05 Friday 21:05:27  test.py : INFO  Testing 50/300
+2024-01-05 Friday 21:05:33  test.py : INFO  Testing 100/300
+2024-01-05 Friday 21:05:41  test.py : INFO  Testing 150/300
+2024-01-05 Friday 21:05:49  test.py : INFO  Testing 200/300
+2024-01-05 Friday 21:05:57  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:35:24  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:35:26  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:35:29  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:35:31  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:35:33  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:35:34  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:35:36  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:36:38  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:36:39  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:36:42  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:36:43  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:36:45  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:36:46  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:36:48  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:39:50  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:39:51  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:39:53  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:39:55  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:39:57  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:39:58  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:40:00  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:41:11  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:41:11  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:41:13  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:41:15  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:41:17  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:41:18  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:41:20  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:42:54  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:42:55  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:42:57  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:42:58  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:43:00  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:43:02  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:43:03  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:44:58  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:44:59  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:45:01  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:45:03  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:45:04  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:45:06  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:45:07  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:45:52  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:45:52  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:45:55  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:45:56  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:45:58  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:45:59  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:46:01  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:46:21  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:46:21  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:46:23  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:46:25  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:46:27  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:46:28  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:46:29  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:49:20  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:49:20  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:49:22  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:49:24  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:49:25  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:49:27  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:49:28  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:49:54  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:49:55  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:49:57  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:49:59  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:50:00  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:50:02  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:50:03  test.py : INFO  Testing 250/300
+2024-01-05 Friday 22:57:14  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 22:57:15  test.py : INFO  Testing 0/300
+2024-01-05 Friday 22:57:17  test.py : INFO  Testing 50/300
+2024-01-05 Friday 22:57:19  test.py : INFO  Testing 100/300
+2024-01-05 Friday 22:57:21  test.py : INFO  Testing 150/300
+2024-01-05 Friday 22:57:22  test.py : INFO  Testing 200/300
+2024-01-05 Friday 22:57:24  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:06:47  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init//checkpoint_1ep.pth.tar'
+2024-01-05 Friday 23:06:48  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:06:50  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:06:52  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:06:53  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:06:55  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:06:56  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:11:22  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_1ep.pth.tar'
+2024-01-05 Friday 23:11:23  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:11:26  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:11:28  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:11:31  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:11:33  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:11:35  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:13:06  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_30ep.pth.tar'
+2024-01-05 Friday 23:13:07  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:13:15  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:13:22  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:13:31  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:13:39  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:13:48  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:15:50  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_1ep.pth.tar'
+2024-01-05 Friday 23:15:51  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:15:54  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:15:56  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:15:59  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:16:01  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:16:03  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:17:01  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_1ep.pth.tar'
+2024-01-05 Friday 23:17:02  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:17:04  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:17:06  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:17:07  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:17:09  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:17:10  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:17:17  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_1ep.pth.tar'
+2024-01-05 Friday 23:17:18  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:17:20  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:17:22  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:17:23  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:17:25  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:17:26  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:21:16  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_1ep.pth.tar'
+2024-01-05 Friday 23:21:17  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:21:19  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:21:21  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:21:22  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:21:23  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:21:25  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:23:11  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_1ep.pth.tar'
+2024-01-05 Friday 23:23:11  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:23:13  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:23:15  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:23:16  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:23:18  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:23:19  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:23:30  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_2ep.pth.tar'
+2024-01-05 Friday 23:23:31  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:23:33  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:23:35  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:23:36  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:23:38  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:23:39  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:23:51  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_3ep.pth.tar'
+2024-01-05 Friday 23:23:52  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:23:55  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:23:57  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:23:58  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:24:00  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:24:01  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:24:13  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_4ep.pth.tar'
+2024-01-05 Friday 23:24:14  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:24:17  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:24:18  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:24:20  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:24:21  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:24:23  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:24:34  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_5ep.pth.tar'
+2024-01-05 Friday 23:24:36  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:24:38  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:24:40  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:24:42  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:24:43  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:24:45  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:24:56  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_6ep.pth.tar'
+2024-01-05 Friday 23:24:57  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:25:00  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:25:03  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:25:06  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:25:08  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:25:11  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:25:23  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_7ep.pth.tar'
+2024-01-05 Friday 23:25:25  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:25:30  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:25:34  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:25:39  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:25:44  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:25:48  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:26:04  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_8ep.pth.tar'
+2024-01-05 Friday 23:26:06  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:26:41  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_30ep.pth.tar'
+2024-01-05 Friday 23:26:42  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:26:51  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:26:59  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:27:08  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:27:18  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:27:28  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:31:53  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_1ep.pth.tar'
+2024-01-05 Friday 23:31:53  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:31:56  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:31:57  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:31:59  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:32:00  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:32:02  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:32:14  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_2ep.pth.tar'
+2024-01-05 Friday 23:32:14  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:32:17  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:32:18  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:32:19  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:32:21  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:32:22  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:32:34  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_3ep.pth.tar'
+2024-01-05 Friday 23:32:35  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:32:37  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:32:38  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:32:40  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:32:41  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:32:42  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:32:59  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_4ep.pth.tar'
+2024-01-05 Friday 23:32:59  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:33:02  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:33:04  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:33:05  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:33:07  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:33:08  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:33:25  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_5ep.pth.tar'
+2024-01-05 Friday 23:33:26  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:33:29  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:33:31  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:33:33  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:33:34  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:33:35  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:33:59  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_6ep.pth.tar'
+2024-01-05 Friday 23:34:01  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:34:13  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:34:20  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:34:28  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:34:35  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:34:42  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:35:25  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_7ep.pth.tar'
+2024-01-05 Friday 23:35:29  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:35:48  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:36:00  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:36:09  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:36:14  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:36:20  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:36:50  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_8ep.pth.tar'
+2024-01-05 Friday 23:36:53  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:37:38  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:38:14  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:38:50  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:39:20  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:39:37  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:40:14  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_9ep.pth.tar'
+2024-01-05 Friday 23:40:17  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:40:49  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:41:35  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:42:09  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:42:41  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:43:34  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:44:27  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_10ep.pth.tar'
+2024-01-05 Friday 23:44:29  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:44:52  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:45:08  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:45:32  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:45:52  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:46:13  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:46:59  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_11ep.pth.tar'
+2024-01-05 Friday 23:47:01  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:47:28  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:48:11  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:48:47  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:49:12  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:49:42  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:51:00  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_12ep.pth.tar'
+2024-01-05 Friday 23:51:02  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:51:11  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:51:21  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:51:33  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:51:50  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:52:14  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:52:59  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_13ep.pth.tar'
+2024-01-05 Friday 23:53:01  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:53:08  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:53:14  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:53:22  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:53:28  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:53:36  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:54:20  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_14ep.pth.tar'
+2024-01-05 Friday 23:54:27  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:54:47  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:55:00  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:55:09  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:55:16  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:55:24  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:55:48  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_15ep.pth.tar'
+2024-01-05 Friday 23:55:50  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:55:55  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:55:59  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:56:05  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:56:10  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:56:15  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:57:04  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_16ep.pth.tar'
+2024-01-05 Friday 23:57:10  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:57:22  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:57:29  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:57:37  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:57:47  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:57:54  test.py : INFO  Testing 250/300
+2024-01-05 Friday 23:58:29  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_17ep.pth.tar'
+2024-01-05 Friday 23:58:31  test.py : INFO  Testing 0/300
+2024-01-05 Friday 23:58:36  test.py : INFO  Testing 50/300
+2024-01-05 Friday 23:58:41  test.py : INFO  Testing 100/300
+2024-01-05 Friday 23:58:46  test.py : INFO  Testing 150/300
+2024-01-05 Friday 23:58:51  test.py : INFO  Testing 200/300
+2024-01-05 Friday 23:58:57  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:00:49  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_18ep.pth.tar'
+2024-01-06 Saturday 00:00:51  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:00:57  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:01:02  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:01:08  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:01:14  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:01:20  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:03:00  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_19ep.pth.tar'
+2024-01-06 Saturday 00:03:02  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:03:09  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:03:14  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:03:21  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:03:27  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:03:33  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:06:11  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_20ep.pth.tar'
+2024-01-06 Saturday 00:06:13  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:06:20  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:06:25  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:06:31  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:06:37  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:06:43  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:09:50  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_21ep.pth.tar'
+2024-01-06 Saturday 00:09:52  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:10:01  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:10:08  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:10:16  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:10:25  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:10:34  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:14:07  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_22ep.pth.tar'
+2024-01-06 Saturday 00:14:09  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:14:17  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:14:24  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:14:33  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:14:41  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:14:49  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:18:32  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_23ep.pth.tar'
+2024-01-06 Saturday 00:18:34  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:18:44  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:18:52  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:19:00  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:19:08  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:19:18  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:23:20  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_24ep.pth.tar'
+2024-01-06 Saturday 00:23:21  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:23:30  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:23:37  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:23:47  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:23:55  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:24:04  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:28:03  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_25ep.pth.tar'
+2024-01-06 Saturday 00:28:05  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:28:14  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:28:22  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:28:33  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:28:42  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:28:51  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:32:53  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_26ep.pth.tar'
+2024-01-06 Saturday 00:32:54  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:33:04  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:33:12  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:33:22  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:33:32  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:33:42  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:37:57  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_27ep.pth.tar'
+2024-01-06 Saturday 00:37:58  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:38:08  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:38:16  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:38:26  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:38:35  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:38:45  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:42:43  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_28ep.pth.tar'
+2024-01-06 Saturday 00:42:45  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:42:54  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:43:02  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:43:13  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:43:22  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:43:32  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:47:54  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_29ep.pth.tar'
+2024-01-06 Saturday 00:47:56  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:48:06  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:48:14  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:48:25  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:48:35  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:48:45  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:52:43  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_30ep.pth.tar'
+2024-01-06 Saturday 00:52:48  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:53:13  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:53:27  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:53:37  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:53:47  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:53:57  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 00:57:37  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_31ep.pth.tar'
+2024-01-06 Saturday 00:57:43  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 00:58:03  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 00:58:16  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 00:58:31  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 00:58:47  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 00:59:03  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:02:03  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_32ep.pth.tar'
+2024-01-06 Saturday 01:02:04  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:02:12  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:02:18  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:02:26  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:02:33  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:02:41  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:06:21  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_33ep.pth.tar'
+2024-01-06 Saturday 01:06:23  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:06:29  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:06:36  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:06:44  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:06:51  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:06:59  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:10:38  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_34ep.pth.tar'
+2024-01-06 Saturday 01:10:40  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:10:47  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:10:54  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:11:01  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:11:08  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:11:17  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:14:55  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_35ep.pth.tar'
+2024-01-06 Saturday 01:14:58  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:15:05  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:15:11  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:15:20  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:15:28  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:15:37  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:18:36  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_36ep.pth.tar'
+2024-01-06 Saturday 01:18:38  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:18:45  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:18:52  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:19:01  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:19:09  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:19:17  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:23:05  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_37ep.pth.tar'
+2024-01-06 Saturday 01:23:07  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:23:15  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:23:22  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:23:31  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:23:40  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:23:49  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:27:47  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_38ep.pth.tar'
+2024-01-06 Saturday 01:27:49  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:27:56  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:28:02  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:28:11  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:28:19  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:28:28  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:32:19  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_39ep.pth.tar'
+2024-01-06 Saturday 01:32:20  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:32:29  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:32:36  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:32:45  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:32:54  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:33:03  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:37:07  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_40ep.pth.tar'
+2024-01-06 Saturday 01:37:09  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:37:17  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:37:24  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:37:34  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:37:43  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:37:52  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:41:47  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_41ep.pth.tar'
+2024-01-06 Saturday 01:41:49  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:41:57  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:42:04  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:42:14  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:42:22  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:42:32  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:46:32  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_42ep.pth.tar'
+2024-01-06 Saturday 01:46:34  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:46:42  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:46:49  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:46:59  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:47:07  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:47:15  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:51:16  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_43ep.pth.tar'
+2024-01-06 Saturday 01:51:18  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:51:26  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:51:33  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:51:43  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:51:50  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:51:59  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 01:56:03  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_44ep.pth.tar'
+2024-01-06 Saturday 01:56:05  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 01:56:13  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 01:56:21  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 01:56:31  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 01:56:40  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 01:56:50  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:01:00  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_45ep.pth.tar'
+2024-01-06 Saturday 02:01:02  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:01:10  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:01:18  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:01:28  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:01:37  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:01:48  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:05:48  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_46ep.pth.tar'
+2024-01-06 Saturday 02:05:50  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:05:58  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:06:05  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:06:14  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:06:21  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:06:30  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:10:32  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_47ep.pth.tar'
+2024-01-06 Saturday 02:10:33  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:10:41  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:10:49  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:10:58  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:11:07  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:11:16  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:15:26  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_48ep.pth.tar'
+2024-01-06 Saturday 02:15:28  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:15:37  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:15:45  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:15:55  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:16:04  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:16:14  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:20:31  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_49ep.pth.tar'
+2024-01-06 Saturday 02:20:33  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:20:42  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:20:50  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:21:00  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:21:09  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:21:18  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:25:31  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_50ep.pth.tar'
+2024-01-06 Saturday 02:25:33  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:25:43  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:25:51  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:26:02  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:26:10  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:26:20  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:30:00  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_51ep.pth.tar'
+2024-01-06 Saturday 02:30:04  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:30:27  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:30:44  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:31:02  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:31:22  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:31:36  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:35:44  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_52ep.pth.tar'
+2024-01-06 Saturday 02:35:49  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:36:09  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:36:26  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:36:40  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:36:49  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:36:58  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:40:29  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_53ep.pth.tar'
+2024-01-06 Saturday 02:40:31  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:40:46  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:41:02  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:41:19  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:41:33  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:41:51  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:45:41  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_54ep.pth.tar'
+2024-01-06 Saturday 02:45:44  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:46:02  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:46:17  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:46:35  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:46:53  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:47:11  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:50:50  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_55ep.pth.tar'
+2024-01-06 Saturday 02:50:53  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:51:09  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:51:24  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:51:44  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:52:00  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:52:18  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 02:56:00  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_56ep.pth.tar'
+2024-01-06 Saturday 02:56:02  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 02:56:11  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 02:56:22  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 02:56:38  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 02:56:55  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 02:57:12  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 03:01:11  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_57ep.pth.tar'
+2024-01-06 Saturday 03:01:13  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 03:01:25  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 03:01:37  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 03:01:53  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 03:02:10  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 03:02:29  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 03:06:24  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_58ep.pth.tar'
+2024-01-06 Saturday 03:06:25  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 03:06:34  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 03:06:42  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 03:06:51  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 03:07:00  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 03:07:09  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 03:11:19  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_59ep.pth.tar'
+2024-01-06 Saturday 03:11:20  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 03:11:29  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 03:11:36  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 03:11:46  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 03:11:55  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 03:12:04  test.py : INFO  Testing 250/300
+2024-01-06 Saturday 03:16:11  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_tt_512_init/checkpoint_60ep.pth.tar'
+2024-01-06 Saturday 03:16:13  test.py : INFO  Testing 0/300
+2024-01-06 Saturday 03:16:22  test.py : INFO  Testing 50/300
+2024-01-06 Saturday 03:16:30  test.py : INFO  Testing 100/300
+2024-01-06 Saturday 03:16:40  test.py : INFO  Testing 150/300
+2024-01-06 Saturday 03:16:49  test.py : INFO  Testing 200/300
+2024-01-06 Saturday 03:16:58  test.py : INFO  Testing 250/300
