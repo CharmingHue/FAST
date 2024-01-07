@@ -1,0 +1,9 @@
+2024-01-07 Sunday 21:18:18  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/fast_base_ema_tt_512_init_4//checkpoint_10ep.pth.tar'
+2024-01-07 Sunday 21:18:18  test.py : INFO  Testing 0/300
+2024-01-07 Sunday 21:18:23  test.py : INFO  Testing 50/300
+2024-01-07 Sunday 21:18:26  test.py : INFO  Testing 100/300
+2024-01-07 Sunday 21:18:30  test.py : INFO  Testing 150/300
+2024-01-07 Sunday 21:18:34  test.py : INFO  Testing 200/300
+2024-01-07 Sunday 21:18:37  test.py : INFO  Testing 250/300
+2024-01-07 Sunday 21:19:03  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/fast_base_ema_tt_512_init_4//checkpoint_11ep.pth.tar'
+2024-01-07 Sunday 21:19:06  test.py : INFO  Testing 0/300

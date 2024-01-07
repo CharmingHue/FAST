@@ -124,12 +124,12 @@ def tt_eval(ep):
     f_list = []
     result_path = os.path.join(args.output_path, 'submit_tt')
     
-    for i in range(80, 90 + 1):
+    for i in range(80, 95 + 1):
         generate_results_from_json(min_score=i/100, dataset='TT', result_path=result_path)
         eval_cmd = cd_root_cmd + " && " + 'cd eval && sh eval_tt.sh %s' % ('../../' + result_path)
         p = subprocess.Popen(eval_cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT)
         p.wait()
-
+        # print(p.stdout.readlines())
         f = 0
         line = ''
         for line in iter(p.stdout.readline, b''):

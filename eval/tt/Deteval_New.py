@@ -63,7 +63,11 @@ args = parser.parse_args()
 project_root = '../../'
 
 input_dir = args.result_path
-gt_dir =  project_root + args.gt_path
+# if __name__ == "__mian__":
+#     gt_dir =  project_root + args.gt_path
+# else:
+#     gt_dir = args.gt_path
+gt_dir = project_root + args.gt_path
 fid_path = os.path.join(os.path.dirname(input_dir), 'res_tt.txt')
 
 allInputs = listdir(input_dir)
