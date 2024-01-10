@@ -1,0 +1,5 @@
+2024-01-10 Wednesday 14:19:29  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/fast_base_ema_tt_512_finetune_ic17mlt//checkpoint_1ep.pth.tar'
+2024-01-10 Wednesday 14:19:30  test.py : INFO  Testing 0/300
+2024-01-10 Wednesday 14:19:41  test.py : INFO  Testing 50/300
+2024-01-10 Wednesday 14:19:52  test.py : INFO  Testing 100/300
+2024-01-10 Wednesday 14:20:04  test.py : INFO  Testing 150/300
