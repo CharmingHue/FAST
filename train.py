@@ -220,9 +220,13 @@ def main(args):
             for k, v in state_dict.items():
                 if k in model.state_dict() and v.size() == model.state_dict()[k].size():
                     new_state_dict[k] = v
+                elif "fpn.backbone" in k:
+                    n_k = k.replace("fpn", "module")
+                    new_state_dict[n_k] = v
                 else:
                     logging.info(f"Skipping {k} as it is not in the new model or size mismatch.")
                 # new_state_dict["module.backbone."+k] = v
+                
             state_dict = new_state_dict
         logging.info(model.load_state_dict(state_dict, strict=False))
     if args.resume:

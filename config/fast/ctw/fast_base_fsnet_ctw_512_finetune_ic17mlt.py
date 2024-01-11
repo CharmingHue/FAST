@@ -53,7 +53,7 @@ train_cfg = dict(
     schedule='polylr',
     epoch=600 // repeat_times,
     optimizer='Adam',
-    # pretrain='pretrained/fast_base_ic17mlt_640.pth',
+    pretrain='pretrained/MixNet_FSNet_hor_925.pth',
     # https://github.com/czczup/FAST/releases/download/release/fast_base_ic17mlt_640.pth
     save_interval=10 // repeat_times,
 )
