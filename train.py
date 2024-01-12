@@ -204,6 +204,31 @@ def main(args):
         logging.info("Initializing mixed precision done.")
 
     model = torch.nn.DataParallel(model).cuda()
+
+    # Checking if CUDA (GPU support) is available
+    cuda_available = torch.cuda.is_available()
+
+    # Getting GPU information if available
+    gpu_info = {}
+    if cuda_available:
+        gpu_info['Number_of_GPUs'] = torch.cuda.device_count()
+        gpu_info['GPU_details'] = []
+        for i in range(torch.cuda.device_count()):
+            gpu_detail = {}
+            gpu_detail['GPU_Index'] = i
+            gpu_detail['GPU_Name'] = torch.cuda.get_device_name(i)
+            gpu_detail['GPU_Capability'] = torch.cuda.get_device_capability(i)
+            gpu_detail['GPU_Memory_GB'] = torch.cuda.get_device_properties(i).total_memory / 1024**3
+            gpu_info['GPU_details'].append(gpu_detail)
+
+    gpu_info['CUDA_Available'] = cuda_available
+    for k, v in gpu_info.items():
+        if k == 'GPU_details':
+            for key, value in gpu_info["GPU_details"][0].items():
+                logging.info('%s:%s' %(key,value))
+        else:
+            logging.info('%s:%s' %(k,v))
+
     
     start_epoch = 0
     start_iter = 0
