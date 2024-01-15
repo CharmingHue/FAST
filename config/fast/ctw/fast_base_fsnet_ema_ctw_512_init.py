@@ -61,5 +61,5 @@ test_cfg = dict(
     min_score=0.87,
     min_area=200,
     bbox_type='poly',
-    result_path='outputs/fast_base_fsnet_ema_ctw_512_finetune_mixnet/submit_ctw'
+    result_path='outputs/fast_base_fsnet_ema_ctw_512_init/submit_ctw'
 )
