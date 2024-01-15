@@ -30,7 +30,7 @@ model = dict(
 )
 repeat_times = 10
 data = dict(
-    batch_size=64,
+    batch_size=32,
     train=dict(
         type='FAST_CTW',
         split='train',

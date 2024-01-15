@@ -2,8 +2,8 @@
 setup_env=${1}
 
 if [ "$setup_env" = "True" ]; then
-    python -m pip install --upgrade pip
     pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+    python -m pip install --upgrade pip
     pip install editdistance
     pip install Polygon3
     pip install pyclipper

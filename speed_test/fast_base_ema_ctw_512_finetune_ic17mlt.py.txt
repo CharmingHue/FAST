@@ -1130,3 +1130,83 @@
 2024-01-15 Monday 15:33:01  test.py : INFO  Testing 200/500
 2024-01-15 Monday 15:33:03  test.py : INFO  Testing 250/500
 2024-01-15 Monday 15:33:04  test.py : INFO  Testing 300/500
+2024-01-15 Monday 15:33:06  test.py : INFO  Testing 350/500
+2024-01-15 Monday 15:33:07  test.py : INFO  Testing 400/500
+2024-01-15 Monday 15:33:08  test.py : INFO  Testing 450/500
+2024-01-15 Monday 15:33:33  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/seed2024/fast_base_ema_ctw_512_finetune_ic17mlt//checkpoint_42ep.pth.tar'
+2024-01-15 Monday 15:33:34  test.py : INFO  Testing 0/500
+2024-01-15 Monday 15:33:37  test.py : INFO  Testing 50/500
+2024-01-15 Monday 15:33:39  test.py : INFO  Testing 100/500
+2024-01-15 Monday 15:33:41  test.py : INFO  Testing 150/500
+2024-01-15 Monday 15:33:43  test.py : INFO  Testing 200/500
+2024-01-15 Monday 15:33:44  test.py : INFO  Testing 250/500
+2024-01-15 Monday 15:33:45  test.py : INFO  Testing 300/500
+2024-01-15 Monday 15:33:47  test.py : INFO  Testing 350/500
+2024-01-15 Monday 15:33:48  test.py : INFO  Testing 400/500
+2024-01-15 Monday 15:33:49  test.py : INFO  Testing 450/500
+2024-01-15 Monday 15:34:15  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/seed2024/fast_base_ema_ctw_512_finetune_ic17mlt//checkpoint_43ep.pth.tar'
+2024-01-15 Monday 15:34:15  test.py : INFO  Testing 0/500
+2024-01-15 Monday 15:34:19  test.py : INFO  Testing 50/500
+2024-01-15 Monday 15:34:21  test.py : INFO  Testing 100/500
+2024-01-15 Monday 15:34:23  test.py : INFO  Testing 150/500
+2024-01-15 Monday 15:34:25  test.py : INFO  Testing 200/500
+2024-01-15 Monday 15:34:27  test.py : INFO  Testing 250/500
+2024-01-15 Monday 15:34:28  test.py : INFO  Testing 300/500
+2024-01-15 Monday 15:34:30  test.py : INFO  Testing 350/500
+2024-01-15 Monday 15:34:32  test.py : INFO  Testing 400/500
+2024-01-15 Monday 15:34:33  test.py : INFO  Testing 450/500
+2024-01-15 Monday 15:34:59  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/seed2024/fast_base_ema_ctw_512_finetune_ic17mlt//checkpoint_44ep.pth.tar'
+2024-01-15 Monday 15:35:00  test.py : INFO  Testing 0/500
+2024-01-15 Monday 15:35:03  test.py : INFO  Testing 50/500
+2024-01-15 Monday 15:35:05  test.py : INFO  Testing 100/500
+2024-01-15 Monday 15:35:07  test.py : INFO  Testing 150/500
+2024-01-15 Monday 15:35:09  test.py : INFO  Testing 200/500
+2024-01-15 Monday 15:35:10  test.py : INFO  Testing 250/500
+2024-01-15 Monday 15:35:11  test.py : INFO  Testing 300/500
+2024-01-15 Monday 15:35:13  test.py : INFO  Testing 350/500
+2024-01-15 Monday 15:35:14  test.py : INFO  Testing 400/500
+2024-01-15 Monday 15:35:15  test.py : INFO  Testing 450/500
+2024-01-15 Monday 15:35:41  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/seed2024/fast_base_ema_ctw_512_finetune_ic17mlt//checkpoint_45ep.pth.tar'
+2024-01-15 Monday 15:35:41  test.py : INFO  Testing 0/500
+2024-01-15 Monday 15:35:45  test.py : INFO  Testing 50/500
+2024-01-15 Monday 15:35:46  test.py : INFO  Testing 100/500
+2024-01-15 Monday 15:35:48  test.py : INFO  Testing 150/500
+2024-01-15 Monday 15:35:50  test.py : INFO  Testing 200/500
+2024-01-15 Monday 15:35:52  test.py : INFO  Testing 250/500
+2024-01-15 Monday 15:35:53  test.py : INFO  Testing 300/500
+2024-01-15 Monday 15:35:55  test.py : INFO  Testing 350/500
+2024-01-15 Monday 15:35:56  test.py : INFO  Testing 400/500
+2024-01-15 Monday 15:35:57  test.py : INFO  Testing 450/500
+2024-01-15 Monday 15:36:22  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/seed2024/fast_base_ema_ctw_512_finetune_ic17mlt//checkpoint_46ep.pth.tar'
+2024-01-15 Monday 15:36:23  test.py : INFO  Testing 0/500
+2024-01-15 Monday 15:36:27  test.py : INFO  Testing 50/500
+2024-01-15 Monday 15:36:29  test.py : INFO  Testing 100/500
+2024-01-15 Monday 15:36:30  test.py : INFO  Testing 150/500
+2024-01-15 Monday 15:36:32  test.py : INFO  Testing 200/500
+2024-01-15 Monday 15:36:34  test.py : INFO  Testing 250/500
+2024-01-15 Monday 15:36:35  test.py : INFO  Testing 300/500
+2024-01-15 Monday 15:36:36  test.py : INFO  Testing 350/500
+2024-01-15 Monday 15:36:38  test.py : INFO  Testing 400/500
+2024-01-15 Monday 15:36:39  test.py : INFO  Testing 450/500
+2024-01-15 Monday 15:37:04  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/seed2024/fast_base_ema_ctw_512_finetune_ic17mlt//checkpoint_47ep.pth.tar'
+2024-01-15 Monday 15:37:05  test.py : INFO  Testing 0/500
+2024-01-15 Monday 15:37:08  test.py : INFO  Testing 50/500
+2024-01-15 Monday 15:37:10  test.py : INFO  Testing 100/500
+2024-01-15 Monday 15:37:12  test.py : INFO  Testing 150/500
+2024-01-15 Monday 15:37:14  test.py : INFO  Testing 200/500
+2024-01-15 Monday 15:37:15  test.py : INFO  Testing 250/500
+2024-01-15 Monday 15:37:17  test.py : INFO  Testing 300/500
+2024-01-15 Monday 15:37:18  test.py : INFO  Testing 350/500
+2024-01-15 Monday 15:37:19  test.py : INFO  Testing 400/500
+2024-01-15 Monday 15:37:21  test.py : INFO  Testing 450/500
+2024-01-15 Monday 15:37:46  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/seed2024/fast_base_ema_ctw_512_finetune_ic17mlt//checkpoint_48ep.pth.tar'
+2024-01-15 Monday 15:37:47  test.py : INFO  Testing 0/500
+2024-01-15 Monday 15:37:50  test.py : INFO  Testing 50/500
+2024-01-15 Monday 15:37:52  test.py : INFO  Testing 100/500
+2024-01-15 Monday 15:37:54  test.py : INFO  Testing 150/500
+2024-01-15 Monday 15:37:56  test.py : INFO  Testing 200/500
+2024-01-15 Monday 15:37:57  test.py : INFO  Testing 250/500
+2024-01-15 Monday 15:37:58  test.py : INFO  Testing 300/500
+2024-01-15 Monday 15:38:00  test.py : INFO  Testing 350/500
+2024-01-15 Monday 15:38:01  test.py : INFO  Testing 400/500
+2024-01-15 Monday 15:38:02  test.py : INFO  Testing 450/500
