@@ -30,7 +30,7 @@ model = dict(
 )
 repeat_times = 10
 data = dict(
-    batch_size=16,
+    batch_size=15,
     train=dict(
         type='FAST_MSRA',
         split='train',
