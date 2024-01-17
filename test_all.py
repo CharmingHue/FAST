@@ -63,7 +63,7 @@ def ctw_eval(ep):
     logging.info('best f-measure %f at ep %d with min-score %.2f' % (best_f, best_ep, best_min_score))
     print(best_line)
     logging.info(best_line)
-    return max(f_list)
+    return 0 if len(f_list) == 0 else max(f_list)
 
 
 def ic15_eval(ep):
@@ -107,7 +107,7 @@ def ic15_eval(ep):
     logging.info('best f-measure %f at ep %d with min-score %.2f' % (best_f, best_ep, best_min_score))
     print(best_line)
     logging.info(best_line)
-    return max(f_list)
+    return 0 if len(f_list) == 0 else max(f_list)
 
 
 def tt_eval(ep):
@@ -152,7 +152,7 @@ def tt_eval(ep):
     logging.info('best f-measure %f at ep %d with min-score %.2f'%(best_f, best_ep, best_min_score))
     print(best_line)
     logging.info(best_line)
-    return max(f_list)
+    return 0 if len(f_list) == 0 else max(f_list)
 
 
 def msra_eval(ep):
@@ -196,7 +196,7 @@ def msra_eval(ep):
     logging.info('best f-measure %f at ep %d with min-score %.2f'%(best_f, best_ep, best_min_score))
     print(best_line)
     logging.info(best_line)
-    return max(f_list)
+    return 0 if len(f_list) == 0 else max(f_list)
 
 
 if __name__ == '__main__':
