@@ -3,11 +3,7 @@ import Polygon as plg
 import numpy as np
 import math
 import cv2
-
-project_root = '../../'
-
-pred_root = project_root + 'outputs/submit_msra/'
-gt_root = project_root + 'data/MSRA-TD500/test/'
+import argparse
 
 
 def get_pred(path):
@@ -35,11 +31,11 @@ def get_gt(path):
         # gt = util.str.split(line, ' ')
         gt = line.split(' ')
 
-        w_ = np.float(gt[4])
-        h_ = np.float(gt[5])
-        x1 = np.float(gt[2]) + w_ / 2.0
-        y1 = np.float(gt[3]) + h_ / 2.0
-        theta = np.float(gt[6]) / math.pi * 180
+        w_ = float(gt[4])
+        h_ = float(gt[5])
+        x1 = float(gt[2]) + w_ / 2.0
+        y1 = float(gt[3]) + h_ / 2.0
+        theta = float(gt[6]) / math.pi * 180
 
         bbox = cv2.boxPoints(((x1, y1), (w_, h_), theta))
         bbox = bbox.reshape(-1)
@@ -63,7 +59,17 @@ def get_intersection(pD, pG):
 
 
 if __name__ == '__main__':
-    th = 0.5
+
+    parser = argparse.ArgumentParser(description='params')
+    parser.add_argument('result_path', nargs='?', type=str)
+    parser.add_argument('--gt-path', default='data/MSRA-TD500/test/', type=str)
+    parser.add_argument('--threshold', default=0.5, type=float)
+    args = parser.parse_args()
+    
+    pred_root =  args.result_path
+    gt_root = '../../' + args.gt_path
+    th = args.threshold
+    print(pred_root)
     pred_list = file_util.read_dir(pred_root)
 
     count, tp, fp, tn, ta = 0, 0, 0, 0, 0
@@ -76,13 +82,13 @@ if __name__ == '__main__':
         ta = ta + len(preds)
         for gt, tag in zip(gts, tags):
             gt = np.array(gt)
-            gt = gt.reshape(gt.shape[0] / 2, 2)
+            gt = gt.reshape(gt.shape[0] // 2, 2)
             gt_p = plg.Polygon(gt)
             difficult = tag
             flag = 0
             for pred in preds:
                 pred = np.array(pred)
-                pred = pred.reshape(pred.shape[0] / 2, 2)
+                pred = pred.reshape(pred.shape[0] // 2, 2)
                 pred_p = plg.Polygon(pred)
 
                 union = get_union(pred_p, gt_p)
@@ -98,6 +104,6 @@ if __name__ == '__main__':
 
     recall = float(tp) / (tp + fp)
     precision = float(tp) / ta
-    hmean = 0 if (precision + recall) == 0 else 2.0 * precision * recall / (precision + recall)
+    hmean = 0 if (precision + recall) == 0 else 2.0 * precision * recall / (precision + recall + 1e-6)
 
     print('p: %.4f, r: %.4f, f: %.4f' % (precision, recall, hmean))

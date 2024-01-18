@@ -61,5 +61,5 @@ test_cfg = dict(
     min_score=0.89,
     min_area=250,
     bbox_type='rect',
-    result_path='outputs/fast_base_ema_ctw_512_finetune_ic17mlt/submit_msra/'
+    result_path='outputs/fast_base_ema_msra_736_finetune_ic17mlt/submit_msra/'
 )
