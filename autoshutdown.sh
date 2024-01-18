@@ -42,7 +42,7 @@ do
                 datapath="$HOME/autodl-tmp/$config"
                 /bin/cp ~/FAST/checkpoints/$config/* $datapath
                 echo "成功复制权重文件到数据盘"
-                mv ~/FAST/checkpoints/$config/*.tar $outpath
+                mv ~/FAST/checkpoints/$config/* $outpath
                 echo "成功移动权重文件到网盘"
                 echo "GPU空闲，准备关机..."
                 shutdown -h now
