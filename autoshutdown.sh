@@ -2,7 +2,8 @@
 
 # 从命令行参数获取自动关机前的等待时间，默认为20分钟
 idle_time=${1:-1200}
-print_time=${2:-30}
+config=${2:-'None'}
+print_time=${3:-30}
 
 # 初始化计数器
 count=0
@@ -33,8 +34,19 @@ do
         # 如果连续1200s都没有任何GPU占用
         if [ $count -ge $idle_time ]; then
             # 关机
-            echo "GPU空闲，准备关机..."
-            shutdown -h now
+            if [ $config = 'None' ]; then
+                echo "GPU空闲，准备关机..."
+                shutdown -h now
+            else
+                outpath="$HOME/autodl-fs/$config"
+                datapath="$HOME/autodl-tmp/$config"
+                /bin/cp ~/FAST/checkpoints/$config/* $datapath
+                echo "成功复制权重文件到数据盘"
+                mv ~/FAST/checkpoints/$config/*.tar $outpath
+                echo "成功移动权重文件到网盘"
+                echo "GPU空闲，准备关机..."
+                shutdown -h now
+            fi
         fi
     else
         # 如果有GPU占用，则重置计数器
