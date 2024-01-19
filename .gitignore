@@ -37,5 +37,6 @@ tmp/
 
 .DS_Store
 .history
-.lh
 visual
+.changelog
+.lh
