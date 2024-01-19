@@ -37,4 +37,5 @@ tmp/
 
 .DS_Store
 .history
+.hl
 visual

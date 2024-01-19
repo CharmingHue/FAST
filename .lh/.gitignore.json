@@ -1,0 +1,18 @@
+{
+    "sourceFile": ".gitignore",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1705646535158,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1705646535158,
+            "name": "Commit-0",
+            "content": "# Byte-compiled / optimized / DLL files\r\n__pycache__/\r\n*.pyc\r\n\r\n# C extensions\r\n*.so\r\n*.o\r\n*.nfs*\r\n\r\n# Distribution / packaging\r\n.Python\r\n*build/\r\n*out/\r\n*outputs/\r\n*data/\r\n*weights/\r\n*ckpt/\r\n*pretrain/\r\n*.pth\r\n*job.*\r\n*env.sh\r\n*.tar\r\n*.gz\r\n*.zip\r\n*.bak\r\n*checkpoints/\r\n*dataloader_vis/\r\n*pretrained/\r\npretrained\r\ndata\r\nvis/\r\n*~\r\ntmp/\r\n*.pth\r\n/.idea\r\n/models/post_processing/ccl/.idea/workspace.xml\r\n\r\n.DS_Store\r\n.history\r\n.hl\r\nvisual"
+        }
+    ]
+}
