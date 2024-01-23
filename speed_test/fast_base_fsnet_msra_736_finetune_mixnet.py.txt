@@ -1,0 +1,75 @@
+2024-01-18 Thursday 15:50:33  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_46ep.pth.tar'
+2024-01-18 Thursday 15:50:46  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 15:50:51  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 15:50:54  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 15:50:57  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 15:51:09  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_47ep.pth.tar'
+2024-01-18 Thursday 15:51:23  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 15:51:28  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 15:51:32  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 15:51:35  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 15:51:46  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_48ep.pth.tar'
+2024-01-18 Thursday 15:51:59  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 15:52:04  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 15:52:08  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 15:52:11  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 15:52:22  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_49ep.pth.tar'
+2024-01-18 Thursday 15:52:35  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 15:52:40  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 15:52:43  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 15:52:46  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 15:52:58  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_50ep.pth.tar'
+2024-01-18 Thursday 15:53:11  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 15:53:16  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 15:53:19  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 15:53:22  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 15:53:33  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_51ep.pth.tar'
+2024-01-18 Thursday 15:53:45  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 15:53:50  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 15:53:53  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 15:53:57  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 15:54:08  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_52ep.pth.tar'
+2024-01-18 Thursday 15:58:52  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 15:58:57  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 15:59:00  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 15:59:03  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 15:59:15  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_53ep.pth.tar'
+2024-01-18 Thursday 16:00:19  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 16:00:24  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 16:00:27  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 16:00:30  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 16:00:42  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_54ep.pth.tar'
+2024-01-18 Thursday 16:01:04  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 16:01:09  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 16:01:13  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 16:01:16  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 16:01:27  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_55ep.pth.tar'
+2024-01-18 Thursday 16:01:41  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 16:01:46  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 16:01:49  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 16:01:52  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 16:02:03  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_56ep.pth.tar'
+2024-01-18 Thursday 16:02:17  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 16:02:22  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 16:02:25  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 16:02:28  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 16:02:41  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_57ep.pth.tar'
+2024-01-18 Thursday 16:02:51  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 16:02:55  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 16:02:59  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 16:03:02  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 16:03:13  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_58ep.pth.tar'
+2024-01-18 Thursday 16:03:23  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 16:03:28  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 16:03:32  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 16:03:35  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 16:03:46  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_59ep.pth.tar'
+2024-01-18 Thursday 16:03:56  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 16:04:01  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 16:04:04  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 16:04:07  test.py : INFO  Testing 150/200
+2024-01-18 Thursday 16:04:18  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_msra_736_finetune_mixnet//checkpoint_60ep.pth.tar'
+2024-01-18 Thursday 16:04:30  test.py : INFO  Testing 0/200
+2024-01-18 Thursday 16:04:34  test.py : INFO  Testing 50/200
+2024-01-18 Thursday 16:04:37  test.py : INFO  Testing 100/200
+2024-01-18 Thursday 16:04:41  test.py : INFO  Testing 150/200
