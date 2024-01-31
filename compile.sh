@@ -2,6 +2,12 @@
 setup_env=${1}
 reinstall=${2}
 
+if [ "$reinstall" = "12" ]; then
+    pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu121
+elif [ "$reinstall" = "11" ]; then
+    pip install torch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 --index-url https://download.pytorch.org/whl/cu118
+fi
+
 if [ "$setup_env" = "True" ]; then
     pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
     python -m pip install --upgrade pip
@@ -16,10 +22,6 @@ if [ "$setup_env" = "True" ]; then
     pip install yacs
     pip install tqdm
     pip install opencv-python==4.6.0.66
-fi
-
-if [ "$reinstall" = "True" ]; then
-    pip install torch==2.1.1 torchvision==0.16.1 torchaudio==2.1.1 --index-url https://download.pytorch.org/whl/cu121
 fi
 
 cd ./models/post_processing/pa/
