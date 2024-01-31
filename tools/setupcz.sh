@@ -28,4 +28,4 @@ sudo npm install -g conventional-changelog-cli
 cd -
 sudo commitizen init cz-conventional-changelog --save-dev --save-exact
 #generate changelog
-#conventional-changelog -p angular -i CHANGELOG.md -s -r 0
+#conventional-changelog -p angular -i CHANGELOG.md -s

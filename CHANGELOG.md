@@ -1,10 +1,45 @@
-#  (2024-1-19)
+##  (2024-01-31)
 
-
-### Bug Fixes
-
-* **.gitignore:** add .lh to gitignore b484dde
-* **.gitignore:** add .lh to gitignore 0644c48
+* feat(tools): add tools modules ([934bfa1](https://github.com/CharmingHue/FAST/commit/934bfa1))
+* feat(visualize): optimize visiual flow ([611cbb9](https://github.com/CharmingHue/FAST/commit/611cbb9))
+* refactor: fix gitignore ([86080a6](https://github.com/CharmingHue/FAST/commit/86080a6))
+* refactor(.gitignore): ignore pa&pse ([a8603ee](https://github.com/CharmingHue/FAST/commit/a8603ee))
+* add ema block for finetune ([132872f](https://github.com/CharmingHue/FAST/commit/132872f))
+* add ema for finetune ([c990b97](https://github.com/CharmingHue/FAST/commit/c990b97))
+* add ema for finetune ([f2d1fe8](https://github.com/CharmingHue/FAST/commit/f2d1fe8))
+* Add emablock in fast neck ([22b7dd1](https://github.com/CharmingHue/FAST/commit/22b7dd1))
+* add FSNet backbone ([18ec096](https://github.com/CharmingHue/FAST/commit/18ec096))
+* Add FSNet&EMA finetune from MixNet on ctw1500 dataset ([2933806](https://github.com/CharmingHue/FAST/commit/2933806))
+* add msra profile ([c2acb87](https://github.com/CharmingHue/FAST/commit/c2acb87))
+* add totaltext dataset config ([5553f78](https://github.com/CharmingHue/FAST/commit/5553f78))
+* complete the profile ([b19b9aa](https://github.com/CharmingHue/FAST/commit/b19b9aa))
+* complete the profile ([805335f](https://github.com/CharmingHue/FAST/commit/805335f))
+* feat(msra):add finetune from msra and ep60 ([1ff35ed](https://github.com/CharmingHue/FAST/commit/1ff35ed))
+* feat(test):compile test msra ([8c66376](https://github.com/CharmingHue/FAST/commit/8c66376))
+* finetune ema on totaltext ([f0ff2a5](https://github.com/CharmingHue/FAST/commit/f0ff2a5))
+* finetune ema on totaltext ([ca4945b](https://github.com/CharmingHue/FAST/commit/ca4945b))
+* fix utils ([0ec9eb6](https://github.com/CharmingHue/FAST/commit/0ec9eb6))
+* from autodl ([f9b425a](https://github.com/CharmingHue/FAST/commit/f9b425a))
+* from autodl ([403f150](https://github.com/CharmingHue/FAST/commit/403f150))
+* load mixnet parameter on train ([649cf32](https://github.com/CharmingHue/FAST/commit/649cf32))
+* Optimize automv ([bd7c9e5](https://github.com/CharmingHue/FAST/commit/bd7c9e5))
+* Optimize automv ([04f52d1](https://github.com/CharmingHue/FAST/commit/04f52d1))
+* Optimize automv ([ed8c44a](https://github.com/CharmingHue/FAST/commit/ed8c44a))
+* Optimize autoshutdown ([c0a008a](https://github.com/CharmingHue/FAST/commit/c0a008a))
+* Optimize autoshutdown ([8dd8018](https://github.com/CharmingHue/FAST/commit/8dd8018))
+* Optimize compile ([ae9b905](https://github.com/CharmingHue/FAST/commit/ae9b905))
+* Optimize compile flow ([910a488](https://github.com/CharmingHue/FAST/commit/910a488))
+* Optimize compile flow ([e3c7be0](https://github.com/CharmingHue/FAST/commit/e3c7be0))
+* Optimize emablock ([c01fe0c](https://github.com/CharmingHue/FAST/commit/c01fe0c))
+* Optimize fsnet ema neck ([fec2a22](https://github.com/CharmingHue/FAST/commit/fec2a22))
+* Optimize test all flow ([f9f74bb](https://github.com/CharmingHue/FAST/commit/f9f74bb))
+* Optimize test all on msra dataset ([8cdcde1](https://github.com/CharmingHue/FAST/commit/8cdcde1))
+* Optimize test flow ([99928da](https://github.com/CharmingHue/FAST/commit/99928da))
+* Optimize tests on Totaltext ([9b679b3](https://github.com/CharmingHue/FAST/commit/9b679b3))
+* rename ([315108b](https://github.com/CharmingHue/FAST/commit/315108b))
+* docs(changelog.md): add CHANGELOG.md ([30ff282](https://github.com/CharmingHue/FAST/commit/30ff282))
+* fix(.gitignore): add .lh to gitignore ([b484dde](https://github.com/CharmingHue/FAST/commit/b484dde))
+* fix(.gitignore): add .lh to gitignore ([0644c48](https://github.com/CharmingHue/FAST/commit/0644c48))
 
 
 
