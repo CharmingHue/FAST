@@ -609,3 +609,10 @@
 2024-01-06 Saturday 03:16:40  test.py : INFO  Testing 150/300
 2024-01-06 Saturday 03:16:49  test.py : INFO  Testing 200/300
 2024-01-06 Saturday 03:16:58  test.py : INFO  Testing 250/300
+2024-01-31 Wednesday 16:55:55  test.py : INFO  Loading model and optimizer from checkpoint 'pretrained/fast_base_tt_512_finetune_ic17mlt.pth'
+2024-01-31 Wednesday 16:55:56  test.py : INFO  Testing 0/300
+2024-01-31 Wednesday 16:56:00  test.py : INFO  Testing 50/300
+2024-01-31 Wednesday 16:56:02  test.py : INFO  Testing 100/300
+2024-01-31 Wednesday 16:56:04  test.py : INFO  Testing 150/300
+2024-01-31 Wednesday 16:56:06  test.py : INFO  Testing 200/300
+2024-01-31 Wednesday 16:56:08  test.py : INFO  Testing 250/300

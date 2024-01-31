@@ -20,9 +20,9 @@ fi
 # 初始化计数器
 count_mv=0
 # 执行文件移动操作
-/bin/cp ~/FAST/checkpoints/$config/*.tar $datapath
+/bin/cp $HOME/FAST/checkpoints/$config/*.tar $datapath
 echo "成功复制权重文件"
-mv ~/FAST/checkpoints/$config/*.tar $outpath
+mv $HOME/FAST/checkpoints/$config/*.tar $outpath
 echo "成功移动权重文件"
 
 while :
@@ -33,9 +33,9 @@ do
     # 检查是否达到等待时间
     if [ $count_mv -ge $wait_time ]; then
         # 执行文件移动操作
-        /bin/cp ~/FAST/checkpoints/$config/*.tar $datapath
+        /bin/cp $HOME/FAST/checkpoints/$config/*.tar $datapath
         echo "成功复制权重文件"
-        mv ~/FAST/checkpoints/$config/*.tar $outpath
+        mv $HOME/FAST/checkpoints/$config/*.tar $outpath
         echo "成功移动权重文件"
         # 重置计数器
         count_mv=0
