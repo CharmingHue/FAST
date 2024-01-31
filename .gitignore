@@ -43,5 +43,3 @@ visual
 node_modules
 package.json
 package-lock.json
-models/post_processing/pa/pa.cpp
-models/post_processing/pse/pse.cpp
