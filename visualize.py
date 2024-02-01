@@ -11,7 +11,7 @@ import random
 import argparse
 import numpy as np
 from PIL import Image
-from tqdm import tqdm
+from tqdm.rich import tqdm
 
 def get_pred(pred_path):
     lines = mmcv.list_from_file(pred_path)
@@ -117,6 +117,7 @@ def visual(get_ann, data_dir, gt_dir, pred_dir, dataset, config):
         # load predictions
         pred, _ = get_pred(pred_path)
         if dataset == 'msra': # process predictions
+            pred = np.array(pred)
             if pred.shape[0] > 0:
                 pred = np.reshape(pred, (pred.shape[0], -1, 2)).astype('int32')
         elif dataset == 'ctw':

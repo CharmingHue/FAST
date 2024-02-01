@@ -53,3 +53,13 @@
 2024-01-18 Thursday 15:36:49  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_ema_msra_736_finetune_mixnet//checkpoint_58ep.pth.tar'
 2024-01-18 Thursday 15:37:05  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_ema_msra_736_finetune_mixnet//checkpoint_59ep.pth.tar'
 2024-01-18 Thursday 15:37:21  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-fs/fast_base_fsnet_ema_msra_736_finetune_mixnet//checkpoint_60ep.pth.tar'
+2024-02-01 Thursday 15:20:44  test.py : INFO  Loading model and optimizer from checkpoint 'pretrained/msra/fast_base_fsnet_ema_msra_736_finetune_mixnet/checkpoint_30ep.pth.tar'
+2024-02-01 Thursday 15:20:46  test.py : INFO  Testing 0/200
+2024-02-01 Thursday 15:20:53  test.py : INFO  Testing 50/200
+2024-02-01 Thursday 15:20:59  test.py : INFO  Testing 100/200
+2024-02-01 Thursday 15:21:05  test.py : INFO  Testing 150/200
+2024-02-01 Thursday 15:28:37  test.py : INFO  Loading model and optimizer from checkpoint 'pretrained/msra/fast_base_fsnet_ema_msra_736_finetune_mixnet/checkpoint_30ep.pth.tar'
+2024-02-01 Thursday 15:28:38  test.py : INFO  Testing 0/200
+2024-02-01 Thursday 15:28:45  test.py : INFO  Testing 50/200
+2024-02-01 Thursday 15:28:51  test.py : INFO  Testing 100/200
+2024-02-01 Thursday 15:28:57  test.py : INFO  Testing 150/200

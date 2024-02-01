@@ -1210,3 +1210,14 @@
 2024-01-15 Monday 15:38:00  test.py : INFO  Testing 350/500
 2024-01-15 Monday 15:38:01  test.py : INFO  Testing 400/500
 2024-01-15 Monday 15:38:02  test.py : INFO  Testing 450/500
+2024-02-01 Thursday 16:32:18  test.py : INFO  Loading model and optimizer from checkpoint 'pretrained/ctw/fast_base_ema_ctw_512_finetune_ic17mlt/checkpoint_8ep.pth.tar'
+2024-02-01 Thursday 16:32:19  test.py : INFO  Testing 0/500
+2024-02-01 Thursday 16:32:23  test.py : INFO  Testing 50/500
+2024-02-01 Thursday 16:32:25  test.py : INFO  Testing 100/500
+2024-02-01 Thursday 16:32:27  test.py : INFO  Testing 150/500
+2024-02-01 Thursday 16:32:29  test.py : INFO  Testing 200/500
+2024-02-01 Thursday 16:32:31  test.py : INFO  Testing 250/500
+2024-02-01 Thursday 16:32:32  test.py : INFO  Testing 300/500
+2024-02-01 Thursday 16:32:34  test.py : INFO  Testing 350/500
+2024-02-01 Thursday 16:32:36  test.py : INFO  Testing 400/500
+2024-02-01 Thursday 16:32:38  test.py : INFO  Testing 450/500

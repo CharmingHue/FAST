@@ -2,7 +2,7 @@ from PIL import Image, ImageDraw, ImageFont
 import os
 import argparse
 import numpy as np
-from tqdm import tqdm
+from tqdm.rich import tqdm
 
 
 

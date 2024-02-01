@@ -102,8 +102,8 @@ if __name__ == '__main__':
             if flag == 0 and difficult == 0:
                 fp = fp + 1
 
-    recall = float(tp) / (tp + fp)
-    precision = float(tp) / ta
+    recall = float(tp) / (tp + fp + 1e-6)
+    precision = float(tp) / (ta + 1e-6)
     hmean = 0 if (precision + recall) == 0 else 2.0 * precision * recall / (precision + recall + 1e-6)
 
     print('p: %.4f, r: %.4f, f: %.4f' % (precision, recall, hmean))

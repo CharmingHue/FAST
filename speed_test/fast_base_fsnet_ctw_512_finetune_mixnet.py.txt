@@ -627,3 +627,14 @@
 2024-01-12 Friday 22:11:55  test.py : INFO  Testing 400/500
 2024-01-12 Friday 22:11:57  test.py : INFO  Testing 450/500
 2024-01-12 Friday 22:12:21  test.py : INFO  Loading model and optimizer from checkpoint '/root/autodl-tmp/fast_base_fsnet_ctw_512_finetune_mixnet//checkpoint_58ep.pth.tar'
+2024-02-01 Thursday 16:32:47  test.py : INFO  Loading model and optimizer from checkpoint 'pretrained/ctw/fast_base_fsnet_ctw_512_finetune_mixnet/checkpoint_3ep.pth.tar'
+2024-02-01 Thursday 16:32:48  test.py : INFO  Testing 0/500
+2024-02-01 Thursday 16:32:53  test.py : INFO  Testing 50/500
+2024-02-01 Thursday 16:32:57  test.py : INFO  Testing 100/500
+2024-02-01 Thursday 16:33:01  test.py : INFO  Testing 150/500
+2024-02-01 Thursday 16:33:05  test.py : INFO  Testing 200/500
+2024-02-01 Thursday 16:33:08  test.py : INFO  Testing 250/500
+2024-02-01 Thursday 16:33:11  test.py : INFO  Testing 300/500
+2024-02-01 Thursday 16:33:15  test.py : INFO  Testing 350/500
+2024-02-01 Thursday 16:33:18  test.py : INFO  Testing 400/500
+2024-02-01 Thursday 16:33:21  test.py : INFO  Testing 450/500
