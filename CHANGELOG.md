@@ -1,3 +1,23 @@
+#  (2024-02-02)
+
+
+### Bug Fixes
+
+* **.gitignore:** add .lh to gitignore ([b484dde](https://github.com/CharmingHue/FAST/commit/b484dde7de91cc7ffd6b01568c7acb64f8aa9433))
+* **.gitignore:** add .lh to gitignore ([0644c48](https://github.com/CharmingHue/FAST/commit/0644c481da247a4a3cffa0bc1b3bb17d0af40bba))
+* **config:** fix test output dir in config file ([a6decf1](https://github.com/CharmingHue/FAST/commit/a6decf153c5e9341d9509271d738ea678f46b632))
+
+
+### Features
+
+* **tools:** add heatmap visualize ([3a422f2](https://github.com/CharmingHue/FAST/commit/3a422f2b6f9c2e05a8ccf20bfc7c60e293b5d441))
+* **tools:** add tools modules ([9e2e478](https://github.com/CharmingHue/FAST/commit/9e2e47816ef6971cb4d2cfe20511769446e2be31))
+* **tools:** add tools modules ([ab96b9f](https://github.com/CharmingHue/FAST/commit/ab96b9f3da829fac359ccab5bac6dcd205f4f539))
+* **tools:** add tools modules ([934bfa1](https://github.com/CharmingHue/FAST/commit/934bfa13105bb09e3b88f18ba0a678c6b65d6b1b))
+* **visualize:** optimize visiual flow ([611cbb9](https://github.com/CharmingHue/FAST/commit/611cbb9be5017a3e99245b04769a3744e5fd41b3))
+
+
+
 #  (2024-02-01)
 
 
