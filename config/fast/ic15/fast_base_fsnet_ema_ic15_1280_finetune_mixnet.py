@@ -1,16 +1,16 @@
 model = dict(
     type='FAST',
     backbone=dict(
-        type='fast_backbone',
-        config='config/fast/nas-configs/fast_base.config'
+        type='fsnet_backbone',
+        config='config/fast/nas-configs/fast_base_fsnet.config'
     ),
     neck=dict(
-        type='fast_neck',
-        config='config/fast/nas-configs/fast_base.config'
+        type='fast_neck_fsnet_ema',
+        config='config/fast/nas-configs/fast_base_fsnet.config'
     ),
     detection_head=dict(
         type='fast_head',
-        config='config/fast/nas-configs/fast_base.config',
+        config='config/fast/nas-configs/fast_base_fsnet.config',
         pooling_size=15,
         dropout_ratio=0.1,
         loss_text=dict(
@@ -30,7 +30,7 @@ model = dict(
 )
 repeat_times = 10
 data = dict(
-    batch_size=36,
+    batch_size=16,
     train=dict(
         type='FAST_IC15',
         split='train',
@@ -53,7 +53,7 @@ train_cfg = dict(
     schedule='polylr',
     epoch=600 // repeat_times,
     optimizer='Adam',
-    pretrain='pretrained/fast_base_ic17mlt_640.pth',
+    pretrain='pretrained/MixNet_FSNet_hor_925.pth',
     # https://github.com/czczup/FAST/releases/download/release/fast_base_ic17mlt_640.pth
     save_interval=10 // repeat_times,
 )
@@ -61,5 +61,5 @@ test_cfg = dict(
     min_score=0.88,
     min_area=600,
     bbox_type='rect',
-    result_path='outputs/submit_ic15.zip'
+    result_path='outputs/fast_base_fsnet_ema_ic15_1280_finetune_mixnet/submit_ic15.zip'
 )

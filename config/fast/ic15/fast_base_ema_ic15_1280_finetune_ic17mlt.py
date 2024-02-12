@@ -5,7 +5,7 @@ model = dict(
         config='config/fast/nas-configs/fast_base.config'
     ),
     neck=dict(
-        type='fast_neck',
+        type='fast_neck_ema',
         config='config/fast/nas-configs/fast_base.config'
     ),
     detection_head=dict(
@@ -53,7 +53,7 @@ train_cfg = dict(
     schedule='polylr',
     epoch=600 // repeat_times,
     optimizer='Adam',
-    pretrain='pretrained/fast_base_ic17mlt_640.pth',
+    pretrain='pretrained/fast_base_ic17mlt_640.pth', 
     # https://github.com/czczup/FAST/releases/download/release/fast_base_ic17mlt_640.pth
     save_interval=10 // repeat_times,
 )
@@ -61,5 +61,5 @@ test_cfg = dict(
     min_score=0.88,
     min_area=600,
     bbox_type='rect',
-    result_path='outputs/submit_ic15.zip'
+    result_path='outputs/fast_base_ema_ic15_1280_finetune_ic17mlt/submit_ic15.zip'
 )
